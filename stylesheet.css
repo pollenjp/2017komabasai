@@ -60,6 +60,7 @@ header #toggle {
   header .menulists li {
     width: 100%;
   }
+}
 /******************************************************************
  *********************    AR    ***********************************
  ******************************************************************/
@@ -112,13 +113,13 @@ header #toggle {
 }
 
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     #ar .container .block0
     {
         width: calc( 100% - 20px - 20px );
     }
 }
-@media (max-width: 670px) {
+@media only screen and (max-width: 670px) {
     #ar .container .block0
     {
         width: calc( 100% - 20px - 20px );
