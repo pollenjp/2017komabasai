@@ -2,12 +2,14 @@
 header .menulist {
   list-style: none;
   float: left;
-  padding-left: 40px;
-  /*background-color: #00ff00;*/
+  /*padding-left: 40px;*/
+  background-color: rgba(0, 255, 0, 0.5);
   line-height: 55px;
   font-size: 20px;
-  /*margin-left: 10px;*/
+  margin-left: 10px;
   font-family : serif;
+  width: 100px;
+  text-align: center;
 }
 
 header .menulists {
