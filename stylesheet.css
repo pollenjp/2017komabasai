@@ -1,1 +1,45 @@
 
+.menulist {
+  list-style: none;
+  float: left;
+  padding-left: 40px;
+  /*background-color: #00ff00;*/
+  line-height: 55px;
+  font-size: 20px;
+  /*margin-left: 10px;*/
+  font-family : serif;
+}
+
+.menulists {
+    float: right;
+    /*background-color: #0000ff;*/
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  background-color: rgba(128, 128,128, 0.5);
+  color: #ff0000;
+  position : fixed;
+  top : 0;
+  z-index : 100;
+}
+
+#top {
+  margin-top: 75px;
+}
+
+.header-top {
+  float: left;
+  padding: 10px 30px 10px 20px;
+  font-size: 35px;
+  background-color: #00ff00;
+  font-family : serif;
+}
+
+a {
+  text-decoration: none;
+}
