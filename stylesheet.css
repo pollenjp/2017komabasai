@@ -1,4 +1,3 @@
-
 header .menulist {
   list-style: none;
   float: left;
@@ -44,4 +43,17 @@ header .header-top {
 
 header a {
   text-decoration: none;
+}
+
+header #toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  header .menulists {
+    display: none;
+  }
+  header .menulists li {
+    width: 100%;
+  }
 }

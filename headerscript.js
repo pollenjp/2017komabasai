@@ -9,6 +9,14 @@ $(function() {
       $(this).animate({'font-size': '20px'}, 10);
   });
 
+  $('.header-top').hover(
+    function(){
+      $(this).animate({'font-size': '40px'}, 10);
+  },
+    function(){
+      $(this).animate({'font-size': '35px'}, 10);
+  });
+
   //ナビゲーションバーの機能部分
   $('.header-top').click(function(){
     $('html, body').animate({'scrollTop': 0}, 500);
