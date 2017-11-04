@@ -1,1 +1,72 @@
+/******************************************************************
+ *********************    AR    ***********************************
+ ******************************************************************/
+#ar *
+{
+    box-sizing: border-box;
+}
 
+#ar .container
+{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #5F9EA0;
+}
+
+#ar .container .block0
+{
+    width: calc( (100% - 20px - 20px)/2);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+#ar .container .clear0.left
+{
+    clear: left;
+}
+
+#ar .container .block0.blue
+{
+    background-color: #ADD8E6;
+}
+
+#ar .container .block0.green
+{
+    background-color: #00FF00;
+}
+
+#ar .container .block0 .block1
+{
+    width: calc((100% - 10px - 10px)/2);
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+#ar .end
+{
+    clear: both;
+}
+
+
+@media (max-width: 1000px) {
+    #ar .container .block0
+    {
+        width: calc( 100% - 20px - 20px );
+    }
+}
+@media (max-width: 670px) {
+    #ar .container .block0
+    {
+        width: calc( 100% - 20px - 20px );
+    }
+    #ar .container .block0 .block1
+    {
+        width: calc( 100% - 20px - 20px );
+    }
+    #ar .container .block0 .clear1.left
+    {
+        clear: left;
+    }
+}
