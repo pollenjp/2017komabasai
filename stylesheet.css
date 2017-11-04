@@ -2,19 +2,24 @@
 ****************                header            *************************
 ***************************************************************************/
 
-header .menulist {
+header .menulists li {
   list-style: none;
   float: left;
   /*padding-left: 40px;*/
-  background-color: rgba(0, 255, 0, 0.5);
-  line-height: 55px;
+  background-color: rgba(64, 64, 64, 0.5);
+  /*line-height: 100%;*/
   font-size: 20px;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   font-family : serif;
-  width: 100px;
+  width: 110px;
   text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 1);
+  position: relative; top: -20px; right : 10px;
+  padding: 10px 0px;
 }
-
+header .menulists li:hover {
+  background-color: rgba(96, 96, 96, 1);
+}
 header .menulists {
     float: right;
     /*background-color: #0000ff;*/
@@ -41,18 +46,18 @@ header .header-top {
   float: left;
   padding: 10px 30px 10px 20px;
   font-size: 35px;
-  background-color: rgba(0, 255, 0, 0.0);
+  background-color: rgba(32, 32, 32, 0.5);
   font-family : serif;
 }
 
 header .header-top a {
   text-decoration: none;
-  color: #ff0000;
+  color: #ffffff;
 }
 
 header .menulists a {
   text-decoration: none;
-  color: #0000ff;
+  color: #ffffff;
 }
 
 header #toggle {
@@ -73,14 +78,14 @@ header #toggle {
     display: block;
     position: relative;
     width: 100%;
-    background: #222;
+    background: rgba(0,0,0,0));
   }
 
   header #toggle a {
     display: block;
     position: relative;
     padding: 12px 0 10px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #000;
     color: #fff;
     text-align: center;
     text-decoration: none;
