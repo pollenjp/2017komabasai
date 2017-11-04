@@ -19,13 +19,29 @@ $(function() {
 
   //ナビゲーションバーの機能部分
   $('.header-top').click(function(){
+    //var id = $(this).attr('href');
+    //var position = $(id).offset().top;
     $('html, body').animate({'scrollTop': 0}, 500);
   });
 
   $('header a').click(function(){
     var id = $(this).attr('href');
-    var position = $(id).offset().top;
+    var position = $(id).get(0).offsetTop;
     $('html, body').animate({'scrollTop': position - 75}, 500);
+  });
+
+  //レスポンシブデザイン
+  $("#toggle").click(function(){
+    $(".menulists").slideToggle();
+    return false;
+  });
+
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 1000;
+    if(win > p){
+      $(".menulists").show();
+    }
   });
 
 /*

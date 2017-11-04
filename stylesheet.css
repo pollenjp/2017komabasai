@@ -45,8 +45,14 @@ header .header-top {
   font-family : serif;
 }
 
-header a {
+header .header-top a {
   text-decoration: none;
+  color: #ff0000;
+}
+
+header .menulists a {
+  text-decoration: none;
+  color: #0000ff;
 }
 
 header #toggle {
@@ -54,16 +60,68 @@ header #toggle {
 }
 
 @media only screen and (max-width: 1000px) {
+
   header .menulists {
     display: none;
   }
+
   header .menulists li {
     width: 100%;
   }
+
+  header #toggle {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #222;
+  }
+
+  header #toggle a {
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  header #toggle:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+  }
+
+  header #toggle a:before, header #toggle a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background: #222;
+  }
+
+  header #toggle a:before{
+    margin-top: -6px;
+  }
+
+  header #toggle a:after{
+    margin-top: 2px;
+  }
+
 }
 /******************************************************************
  *********************    AR    ***********************************
  ******************************************************************/
+
 #ar *
 {
     box-sizing: border-box;
