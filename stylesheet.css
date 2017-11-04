@@ -1,5 +1,5 @@
 
-.menulist {
+header .menulist {
   list-style: none;
   float: left;
   padding-left: 40px;
@@ -10,7 +10,7 @@
   font-family : serif;
 }
 
-.menulists {
+header .menulists {
     float: right;
     /*background-color: #0000ff;*/
     padding-right: 40px;
@@ -32,14 +32,14 @@ header {
   margin-top: 75px;
 }
 
-.header-top {
+header .header-top {
   float: left;
   padding: 10px 30px 10px 20px;
   font-size: 35px;
-  background-color: #00ff00;
+  background-color: rgba(0, 255, 0, 0.0);
   font-family : serif;
 }
 
-a {
+header a {
   text-decoration: none;
 }

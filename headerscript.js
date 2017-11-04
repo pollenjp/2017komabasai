@@ -14,4 +14,17 @@ $(function() {
     $('html, body').animate({'scrollTop': 0}, 500);
   });
 
+  $('header a').click(function(){
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('html, body').animate({'scrollTop': position - 75}, 500);
+  });
+
+/*
+  var mypos = $('html, body').offset().top;
+
+  if (0 < mypos && mypos < 100) {
+    $('header a').css('color', '#ffff00';
+  }
+*/
 });
