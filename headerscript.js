@@ -31,7 +31,7 @@ $(function() {
   $('header a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).get(0).offsetTop;
-    $('html, body').animate({'scrollTop': position - 75}, 500);
+    $('html, body').animate({'scrollTop': position - 80}, 500);
   });
 
   //スクロールしたい要素の高さの取得（普通は<body>）
@@ -51,7 +51,8 @@ $(function() {
   });
 
   $('.menu_responsive').click(function(){
-    $('.menulists').slideToggle();
+    $('header .menulists li').eq(6).css('border-bottom', '5px solid rgba(240, 240, 0, 1)');
+    $('header .menulists').slideToggle();
     return false;
   });
 
