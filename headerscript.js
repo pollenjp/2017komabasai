@@ -55,10 +55,6 @@ $(function() {
     return false;
   });
 
-  $('header .menulists li').click(function(){
-    $('.menulists').slideUp();
-  });
-
   $('header #toggle .top_responsive').click(function(){
     $('.menulists').slideUp();
   });
@@ -71,6 +67,9 @@ $(function() {
       $('.menulists').show();
     } else {
       $('.header-top').hide();
+      $('header .menulists li').click(function(){
+        $('.menulists').slideUp();
+      });
     }
   });
   //ここまでレスポンシブデザイン
