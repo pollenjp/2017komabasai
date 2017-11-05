@@ -34,6 +34,17 @@ $(function() {
     $('html, body').animate({'scrollTop': position - 75}, 500);
   });
 
+  //スクロールしたい要素の高さの取得（普通は<body>）
+  var getHeight = $('body').height();
+  $(window).scroll(function () { //スクロールする度に行う処理。
+    var ScrollTop = $(document).scrollTop(); //上部を基準にしたスクロール場所の取得
+    var bgPosition = 300 / getHeight * ScrollTop + 10; // 80←%を動かす値(10%→90%等), 10←初期値
+
+    $('body').css(//background-position-yのコントロール
+      {backgroundPositionY: bgPosition+"%"}
+    );
+  });
+
   //ここからレスポンシブデザイン
   $('#toggle').click(function(){
     $('.menulists').slideToggle();
@@ -48,17 +59,6 @@ $(function() {
       $('.menulists').show();
     } else {
       $('.header-top').hide();
-
-      //スクロールしたい要素の高さの取得（普通は<body>）
-      var getHeight = $('body').height();
-      $(window).scroll(function () {//スクロールする度に行う処理。　　　　　　　　　　
-        var ScrollTop = $(document).scrollTop(); //上部を基準にしたスクロール場所の取得
-        var bgPosition = 80/getHeight*ScrollTop+10;　// 80←%を動かす値(10%→90%等), 10←初期値
-
-        $('body').css(//background-position-yのコントロール
-          {backgroundPositionY: bgPosition+"%"}
-        );
-      });
 /*
       $('.menulist').hover(function({
         $('.menulist').css('background-color', 'rgba(160, 160, 160, 1)');
@@ -66,7 +66,6 @@ $(function() {
         $('.menulist').css('background-color', 'rgba(128, 128, 128, 1)');
       }));
 */
-
     }
   });
   //ここまでレスポンシブデザイン
