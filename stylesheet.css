@@ -13,6 +13,18 @@ header .menulist {
   font-family : serif;
   width: 100px;
   text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 1);
+  position: relative; top: -20px; right : 10px;
+  /*padding: 0px 0px;*/
+  cursor : pointer;
+}
+header .menulists li:hover {
+  background-color: rgba(96, 96, 96, 1);
+}
+
+/*
+header .menulists .menulist .button {
+  height: 75px;
 }
 
 header .menulists {
@@ -43,6 +55,13 @@ header .header-top {
   font-size: 35px;
   background-color: rgba(0, 255, 0, 0.0);
   font-family : serif;
+  cursor : pointer;
+  align-items: center;
+  line-height: 75px;
+}
+
+header .header-top:hover {
+  background-color: rgba(128, 128, 128, 1);
 }
 
 header .header-top a {
@@ -59,34 +78,50 @@ header #toggle {
   display: none;
 }
 
+
+/* ここからレスポンシブデザイン */
 @media only screen and (max-width: 1000px) {
 
-  header .menulists {
+  .header-top {
     display: none;
   }
 
+  header .menulists {
+    display: none;
+    padding-right: 0px;
+    /*height: 75px;*/
+  }
+
   header .menulists li {
-    width: 100%;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 1);
+  }
+
+  header .header-top:hover{
+    background-color: rgba(160, 160, 160, 1);
   }
 
   header #toggle {
     display: block;
     position: relative;
     width: 100%;
-    background: #222;
+    background-color: rgba(96, 96, 96, 1);
+    font-size: 30px;
+    font-family : serif;
   }
 
   header #toggle a {
     display: block;
     position: relative;
     padding: 12px 0 10px;
-    border-bottom: 1px solid #444;
-    color: #fff;
+    border-bottom: 1px solid #000;
+    color: rgba(0, 0, 0, 1);
     text-align: center;
     text-decoration: none;
+    height: 52px;
   }
-
-  header #toggle:before{
+/*
+  header #toggle:before {
     display: block;
     content: "";
     position: absolute;
@@ -98,7 +133,8 @@ header #toggle {
     background: #fff;
   }
 
-  header #toggle a:before, header #toggle a:after{ display: block;
+  header #toggle a:before, header #toggle a:after {
+    display: block;
     content: "";
     position: absolute;
     top: 50%;
@@ -107,16 +143,18 @@ header #toggle {
     height: 4px;
     background: #222;
   }
-
-  header #toggle a:before{
+*/
+  header #toggle a:before {
     margin-top: -6px;
   }
 
-  header #toggle a:after{
+  header #toggle a:after {
     margin-top: 2px;
   }
 
 }
+/*ここまでレスポンシブデザイン*/
+
 /******************************************************************
  *********************    START AR      ***************************
  ******************************************************************/
