@@ -18,3 +18,5 @@
 
 参照：http://rsv-rank.info/css/css-tech/classes/
 
+## こまめなcommitを！
+- こまめにcommitすることは生きている証です、メンバー同士で進捗を共有しましょう☆
