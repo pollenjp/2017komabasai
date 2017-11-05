@@ -1,5 +1,9 @@
 $(function() {
-
+/*
+  ==========================================================
+  header block
+  ==========================================================
+*/
   //ナビゲーションメニューにhoverした時の反応
   $('.menulist').hover(
     function(){
@@ -30,9 +34,9 @@ $(function() {
     $('html, body').animate({'scrollTop': position - 75}, 500);
   });
 
-  //レスポンシブデザイン
-  $("#toggle").click(function(){
-    $(".menulists").slideToggle();
+  //ここからレスポンシブデザイン
+  $('#toggle').click(function(){
+    $('.menulists').slideToggle();
     return false;
   });
 
@@ -40,9 +44,22 @@ $(function() {
     var win = $(window).width();
     var p = 1000;
     if(win > p){
-      $(".menulists").show();
+      $('.header-top').show();
+      $('.menulists').show();
+    } else {
+      $('.header-top').hide();
+
+/*
+      $('.menulist').hover(function({
+        $('.menulist').css('background-color', 'rgba(160, 160, 160, 1)');
+      }, function(){
+        $('.menulist').css('background-color', 'rgba(128, 128, 128, 1)');
+      }));
+*/
+
     }
   });
+  //ここまでレスポンシブデザイン
 
 /*
   var mypos = $('html, body').offset().top;
@@ -50,5 +67,21 @@ $(function() {
   if (0 < mypos && mypos < 100) {
     $('header a').css('color', '#ffff00';
   }
+*/
+/*
+==========================================================
+header block - top block
+==========================================================
+*/
+/*
+==========================================================
+accsee block - special block
+==========================================================
+*/
+
+/*
+==========================================================
+special block - vote block
+==========================================================
 */
 });

@@ -21,7 +21,7 @@ header .menulists li {
   cursor : pointer;
 }
 header .menulists li:hover {
-  background-color: rgba(96, 96, 96, 0.8);
+  background-color: rgba(96, 96, 96, 1);
 }
 
 /*
@@ -64,8 +64,9 @@ header .header-top {
   align-items: center;
   line-height: 75px;
 }
-header .header-top:hover{
-  background-color: rgba(96, 96, 96, 0.8);
+
+header .header-top:hover {
+  background-color: rgba(128, 128, 128, 1);
 }
 
 header .header-top a {
@@ -82,21 +83,36 @@ header #toggle {
   display: none;
 }
 
+
+/* ここからレスポンシブデザイン */
 @media only screen and (max-width: 1000px) {
 
-  header .menulists {
+  .header-top {
     display: none;
   }
 
+  header .menulists {
+    display: none;
+    padding-right: 0px;
+    /*height: 75px;*/
+  }
+
   header .menulists li {
-    width: 100%;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 1);
+  }
+
+  header .header-top:hover{
+    background-color: rgba(160, 160, 160, 1);
   }
 
   header #toggle {
     display: block;
     position: relative;
     width: 100%;
-    background: rgba(0,0,0,0));
+    background-color: rgba(96, 96, 96, 1);
+    font-size: 30px;
+    font-family : serif;
   }
 
   header #toggle a {
@@ -104,12 +120,13 @@ header #toggle {
     position: relative;
     padding: 12px 0 10px;
     border-bottom: 1px solid #000;
-    color: #fff;
+    color: rgba(0, 0, 0, 1);
     text-align: center;
     text-decoration: none;
+    height: 52px;
   }
-
-  header #toggle:before{
+/*
+  header #toggle:before {
     display: block;
     content: "";
     position: absolute;
@@ -121,7 +138,7 @@ header #toggle {
     background: #fff;
   }
 
-  header #toggle a:before, header #toggle a:after{
+  header #toggle a:before, header #toggle a:after {
     display: block;
     content: "";
     position: absolute;
@@ -131,16 +148,18 @@ header #toggle {
     height: 4px;
     background: #222;
   }
-
-  header #toggle a:before{
+*/
+  header #toggle a:before {
     margin-top: -6px;
   }
 
-  header #toggle a:after{
+  header #toggle a:after {
     margin-top: 2px;
   }
 
 }
+/*ここまでレスポンシブデザイン*/
+
 /******************************************************************
  *********************    AR    ***********************************
  ******************************************************************/
