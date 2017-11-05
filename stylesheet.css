@@ -2,18 +2,16 @@
 ****************                header            *************************
 ***************************************************************************/
 
-header .menulists li {
+header .menulist {
   list-style: none;
   float: left;
   /*padding-left: 40px;*/
-  background-color: rgba(64, 64, 64, 0.5);
-  line-height: 75px;
-  align-items: center;
+  background-color: rgba(0, 255, 0, 0.5);
+  line-height: 55px;
   font-size: 20px;
-  /*margin-left: 10px;*/
+  margin-left: 10px;
   font-family : serif;
-  width: 110px;
-  height: 75px;
+  width: 100px;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 1);
   position: relative; top: -20px; right : 10px;
@@ -28,7 +26,6 @@ header .menulists li:hover {
 header .menulists .menulist .button {
   height: 75px;
 }
-*/
 
 header .menulists {
     float: right;
@@ -45,7 +42,6 @@ header {
   color: #ff0000;
   position : fixed;
   top : 0;
-  left: 0;
   z-index : 100;
 }
 
@@ -54,11 +50,10 @@ header {
 }
 
 header .header-top {
-  height: 75px;
   float: left;
-  padding: 0px 30px 0px 30px;
+  padding: 10px 30px 10px 20px;
   font-size: 35px;
-  background-color: rgba(32, 32, 32, 0.5);
+  background-color: rgba(0, 255, 0, 0.0);
   font-family : serif;
   cursor : pointer;
   align-items: center;
@@ -71,12 +66,12 @@ header .header-top:hover {
 
 header .header-top a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ff0000;
 }
 
 header .menulists a {
   text-decoration: none;
-  color: #ffffff;
+  color: #0000ff;
 }
 
 header #toggle {
@@ -161,7 +156,7 @@ header #toggle {
 /*ここまでレスポンシブデザイン*/
 
 /******************************************************************
- *********************    AR    ***********************************
+ *********************    START AR      ***************************
  ******************************************************************/
 
 #ar *
@@ -177,29 +172,34 @@ header #toggle {
     background-color: #5F9EA0;
 }
 
-#ar .container .block0
+/* #ar .container .block0 */
+#ar .block0
 {
     width: calc( (100% - 20px - 20px)/2);
     float: left;
     margin: 10px;
     padding: 10px;
 }
-#ar .container .clear0.left
+/* #ar .container .clear0.left */
+#ar .clear0.left
 {
     clear: left;
 }
 
-#ar .container .block0.blue
+/* #ar .container .block0.blue */
+#ar .block0.blue
 {
     background-color: #ADD8E6;
 }
 
-#ar .container .block0.green
+/* #ar .container .block0.green */
+#ar .block0.green
 {
     background-color: #00FF00;
 }
 
-#ar .container .block0 .block1
+/* #ar .container .block0 .block1 */
+#ar .block1
 {
     width: calc((100% - 10px - 10px)/2);
     float: left;
@@ -214,22 +214,29 @@ header #toggle {
 
 
 @media only screen and (max-width: 1000px) {
-    #ar .container .block0
+    /* #ar .container .block0 */
+    #ar .block0
     {
         width: calc( 100% - 20px - 20px );
     }
 }
 @media only screen and (max-width: 670px) {
-    #ar .container .block0
+    /* #ar .container .block0 */
+    #ar .block0
     {
         width: calc( 100% - 20px - 20px );
     }
-    #ar .container .block0 .block1
+    /* #ar .container .block0 .block1 */
+    #ar .block1
     {
         width: calc( 100% - 20px - 20px );
     }
-    #ar .container .block0 .clear1.left
+    /* #ar .container .block0 .clear1.left */
+    #ar .clear1.left
     {
         clear: left;
     }
 }
+/******************************************************************
+ *********************      AR  end     ***************************
+ ******************************************************************/
