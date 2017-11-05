@@ -2,33 +2,18 @@
 ****************                header            *************************
 ***************************************************************************/
 
-header .menulists li {
+header .menulist {
   list-style: none;
   float: left;
   /*padding-left: 40px;*/
-  background-color: rgba(64, 64, 64, 0.5);
-  line-height: 75px;
-  align-items: center;
+  background-color: rgba(0, 255, 0, 0.5);
+  line-height: 55px;
   font-size: 20px;
-  /*margin-left: 10px;*/
+  margin-left: 10px;
   font-family : serif;
-  width: 110px;
-  height: 75px;
+  width: 100px;
   text-align: center;
-  border-right: 1px solid rgba(0, 0, 0, 1);
-  position: relative; top: -20px; right : 10px;
-  /*padding: 0px 0px;*/
-  cursor : pointer;
 }
-header .menulists li:hover {
-  background-color: rgba(96, 96, 96, 0.8);
-}
-
-/*
-header .menulists .menulist .button {
-  height: 75px;
-}
-*/
 
 header .menulists {
     float: right;
@@ -45,7 +30,6 @@ header {
   color: #ff0000;
   position : fixed;
   top : 0;
-  left: 0;
   z-index : 100;
 }
 
@@ -54,28 +38,21 @@ header {
 }
 
 header .header-top {
-  height: 75px;
   float: left;
-  padding: 0px 30px 0px 30px;
+  padding: 10px 30px 10px 20px;
   font-size: 35px;
-  background-color: rgba(32, 32, 32, 0.5);
+  background-color: rgba(0, 255, 0, 0.0);
   font-family : serif;
-  cursor : pointer;
-  align-items: center;
-  line-height: 75px;
-}
-header .header-top:hover{
-  background-color: rgba(96, 96, 96, 0.8);
 }
 
 header .header-top a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ff0000;
 }
 
 header .menulists a {
   text-decoration: none;
-  color: #ffffff;
+  color: #0000ff;
 }
 
 header #toggle {
@@ -96,14 +73,14 @@ header #toggle {
     display: block;
     position: relative;
     width: 100%;
-    background: rgba(0,0,0,0));
+    background: #222;
   }
 
   header #toggle a {
     display: block;
     position: relative;
     padding: 12px 0 10px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #444;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -121,8 +98,7 @@ header #toggle {
     background: #fff;
   }
 
-  header #toggle a:before, header #toggle a:after{
-    display: block;
+  header #toggle a:before, header #toggle a:after{ display: block;
     content: "";
     position: absolute;
     top: 50%;
@@ -142,7 +118,7 @@ header #toggle {
 
 }
 /******************************************************************
- *********************    AR  start    ****************************
+ *********************    START AR      ***************************
  ******************************************************************/
 
 #ar *
@@ -185,7 +161,7 @@ header #toggle {
 }
 
 /* #ar .container .block0 .block1 */
-#ar .block0 .block1
+#ar .block1
 {
     width: calc((100% - 10px - 10px)/2);
     float: left;
