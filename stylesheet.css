@@ -2,6 +2,10 @@
 ****************                header            *************************
 ***************************************************************************/
 
+body {
+  color : #ffffff;
+}
+
 header .menulists li {
   list-style: none;
   float: left;
@@ -174,7 +178,7 @@ header #toggle {
     width: 100%;
     margin: 20px;
     padding: 20px;
-    background-color: #5F9EA0;
+    background-color: rgba(95, 168, 160, 0.5);
 }
 
 /* #ar .container .block0 */
@@ -194,13 +198,13 @@ header #toggle {
 /* #ar .container .block0.blue */
 #ar .block0.blue
 {
-    background-color: #ADD8E6;
+    background-color: rgba(174, 232, 246, 0.6);
 }
 
 /* #ar .container .block0.green */
 #ar .block0.green
 {
-    background-color: #00FF00;
+    background-color: rgba(0, 255, 0, 0.6);
 }
 
 /* #ar .container .block0 .block1 */
@@ -245,6 +249,15 @@ header #toggle {
 /******************************************************************
  *********************      AR  end     ***************************
  ******************************************************************/
+
+#access {
+  color: #ffffff;
+}
+
+#access .container img {
+  width: 50%;
+  margin: 0 auto;
+}
 
 body {
   background-image: url("./testimg.jpg");
