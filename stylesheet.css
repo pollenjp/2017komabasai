@@ -204,7 +204,7 @@ header #toggle {
 }
 
 /* #ar .container .block0 .block1 */
-#ar .block0 .block1
+#ar .block1
 {
     width: calc((100% - 10px - 10px)/2);
     float: left;
