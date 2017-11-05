@@ -161,7 +161,7 @@ header #toggle {
 /*ここまでレスポンシブデザイン*/
 
 /******************************************************************
- *********************    AR    ***********************************
+ *********************    AR  start    ****************************
  ******************************************************************/
 
 #ar *
@@ -177,29 +177,34 @@ header #toggle {
     background-color: #5F9EA0;
 }
 
-#ar .container .block0
+/* #ar .container .block0 */
+#ar .block0
 {
     width: calc( (100% - 20px - 20px)/2);
     float: left;
     margin: 10px;
     padding: 10px;
 }
-#ar .container .clear0.left
+/* #ar .container .clear0.left */
+#ar .clear0.left
 {
     clear: left;
 }
 
-#ar .container .block0.blue
+/* #ar .container .block0.blue */
+#ar .block0.blue
 {
     background-color: #ADD8E6;
 }
 
-#ar .container .block0.green
+/* #ar .container .block0.green */
+#ar .block0.green
 {
     background-color: #00FF00;
 }
 
-#ar .container .block0 .block1
+/* #ar .container .block0 .block1 */
+#ar .block1
 {
     width: calc((100% - 10px - 10px)/2);
     float: left;
@@ -214,22 +219,29 @@ header #toggle {
 
 
 @media only screen and (max-width: 1000px) {
-    #ar .container .block0
+    /* #ar .container .block0 */
+    #ar .block0
     {
         width: calc( 100% - 20px - 20px );
     }
 }
 @media only screen and (max-width: 670px) {
-    #ar .container .block0
+    /* #ar .container .block0 */
+    #ar .block0
     {
         width: calc( 100% - 20px - 20px );
     }
-    #ar .container .block0 .block1
+    /* #ar .container .block0 .block1 */
+    #ar .block1
     {
         width: calc( 100% - 20px - 20px );
     }
-    #ar .container .block0 .clear1.left
+    /* #ar .container .block0 .clear1.left */
+    #ar .clear1.left
     {
         clear: left;
     }
 }
+/******************************************************************
+ *********************      AR  end     ***************************
+ ******************************************************************/
