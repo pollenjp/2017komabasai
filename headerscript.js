@@ -67,6 +67,7 @@ $(function() {
       $('.menulists').show();
     } else {
       $('.header-top').hide();
+      $('.menulists').hide();
       $('header .menulists li').click(function(){
         $('.menulists').slideUp();
       });
