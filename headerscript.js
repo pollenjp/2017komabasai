@@ -1,9 +1,9 @@
+//headerのjQueryをここに書きます.
+
 $(function() {
-/*
-  ==========================================================
-  header block
-  ==========================================================
-*/
+
+  $('header .menulists li').eq(0).css('border-left', '1px solid #000000');
+
   //ナビゲーションメニューにhoverした時の反応
   $('.menulist').hover(
     function(){
@@ -31,13 +31,33 @@ $(function() {
   $('header a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).get(0).offsetTop;
-    $('html, body').animate({'scrollTop': position - 75}, 500);
+    $('html, body').animate({'scrollTop': position - 80}, 500);
+  });
+
+  //スクロールしたい要素の高さの取得（普通は<body>）
+  var getHeight = $('body').height();
+  $(window).scroll(function () { //スクロールする度に行う処理。
+    var ScrollTop = $(document).scrollTop(); //上部を基準にしたスクロール場所の取得
+    var bgPosition = (600 / getHeight) * ScrollTop + 10; // 80←%を動かす値(10%→90%等), 10←初期値
+
+    $('body').css(//background-position-yのコントロール
+      {backgroundPositionY: bgPosition + "%"}
+    );
   });
 
   //ここからレスポンシブデザイン
-  $('#toggle').click(function(){
-    $('.menulists').slideToggle();
+  $('.top_responsive').click(function(){
+    $('html, body').animate({'scrollTop': 0}, 500);
+  });
+
+  $('.menu_responsive').click(function(){
+    $('header .menulists li').eq(6).css('border-bottom', '5px solid rgba(240, 240, 0, 1)');
+    $('header .menulists').slideToggle();
     return false;
+  });
+
+  $('header #toggle .top_responsive').click(function(){
+    $('.menulists').slideUp();
   });
 
   $(window).resize(function(){
@@ -48,24 +68,12 @@ $(function() {
       $('.menulists').show();
     } else {
       $('.header-top').hide();
-
-/*
-      $('.menulist').hover(function({
-        $('.menulist').css('background-color', 'rgba(160, 160, 160, 1)');
-      }, function(){
-        $('.menulist').css('background-color', 'rgba(128, 128, 128, 1)');
-      }));
-*/
-
+      $('.menulists').hide();
+      $('header .menulists li').click(function(){
+        $('.menulists').slideUp();
+      });
     }
   });
   //ここまでレスポンシブデザイン
 
-/*
-  var mypos = $('html, body').offset().top;
-
-  if (0 < mypos && mypos < 100) {
-    $('header a').css('color', '#ffff00';
-  }
-*/
 });
