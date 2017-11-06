@@ -60,26 +60,33 @@ $(function() {
   $(window).resize(function(){
     var win = $(window).width();
     if(win > 1000){
+
       $('.header-top').show();
       $('.menulists').show();
+
     } else if (win < 600){
+
       $('.header-top').hide();
       $('.menulists').hide();
       $('header .menulists li').click(function(){
         $('.menulists').slideUp();
       });
+
       //背景の視差効果
       $(window).scroll(function() {
         var mypos = $(document).scrollTop();
-        var bgsc = - 0.3 * mypos + 10;
+        var bgsc = 0.3 * mypos + 10;
         $('body').css({'background-position-y': bgsc + "px"});
       });
+
     } else {
+
       $('.header-top').hide();
       $('.menulists').hide();
       $('header .menulists li').click(function(){
         $('.menulists').slideUp();
       });
+
     }
   });
   //ここまでレスポンシブデザイン
