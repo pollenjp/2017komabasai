@@ -99,8 +99,9 @@ if( window.matchMedia('(max-width:670px)').matches ){
     var block0Class = arId.getElementsByClassName("block0");        //block: length 2
     ps = getComputedStyle( containerClass[0] );                     // Parent Style // parent="#ar .container"
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
+    pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = (pw - 2*ppr).toString() + "px";                                   // Current Width
+    cw = (pw -2*pmr -2*ppr).toString() + "px";                                   // Current Width
     for(var i=0; i<block0Class.length; i++){
         styleWidth(block0Class[i], cw);
     }
@@ -115,8 +116,9 @@ if( window.matchMedia('(max-width:670px)').matches ){
     var block0Class = arId.getElementsByClassName("block0");        //block: length 2
     ps = getComputedStyle( containerClass[0] );                     // Parent Style // parent="#ar .container"
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
+    pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = (pw - 2*ppr).toString() + "px";                                   // Current Width
+    cw = (pw -2*pmr - 2*ppr).toString() + "px";                                   // Current Width
     for(var i=0; i<block0Class.length; i++){
         styleWidth(block0Class[i], cw);
     }
@@ -131,8 +133,9 @@ if( window.matchMedia('(max-width:670px)').matches ){
     var block0Class = arId.getElementsByClassName("block0");        //block: length 2
     ps = getComputedStyle( containerClass[0] );                     // Parent Style // parent="#ar .container"
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
+    pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = ((pw-ppr*2)/2).toString() + "px";                          // Current Width
+    cw = ((pw-2*pmr-ppr*2)/2).toString() + "px";                          // Current Width
     for(var i=0; i<block0Class.length; i++){
         styleWidth(block0Class[i], cw);
     }
@@ -174,8 +177,9 @@ if( window.matchMedia('(max-width:670px)').matches ){
     var block1Class = arId.getElementsByClassName("block1");
     ps = getComputedStyle( block0Class[0] );                        // Parent Style // parent="#ar .block0"
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
+    pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = (pw - 2*ppr).toString() + "px";                           // Current Width
+    cw = (pw -2*pmr- 2*ppr).toString() + "px";                           // Current Width
     for(var i=0; i<block1Class.length; i++){
         styleWidth(block1Class[i], cw );
         block1Class[i].style.float = "left";
@@ -194,8 +198,9 @@ if( window.matchMedia('(max-width:670px)').matches ){
     var block1Class = arId.getElementsByClassName("block1");
     ps = getComputedStyle( block0Class[0] );                        // Parent Style // parent="#ar .block0"
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
+    pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = ((pw-ppr*2)/2).toString() + "px";                          // Current Width
+    cw = ((pw-2*pmr-ppr*2)/2).toString() + "px";                          // Current Width
     for(var i=0; i<block1Class.length; i++){
         styleWidth(block1Class[i], cw );
         block1Class[i].style.float = "left";
@@ -209,13 +214,14 @@ if( window.matchMedia('(max-width:670px)').matches ){
 var markerImgClass = arId.getElementsByClassName("marker-img");
 ps = getComputedStyle( block1Class[0] );
 pw = Number(ps.width.split("p")[0]);                // String --> remove "px" --> Number
+pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
 ppr = Number(ps.paddingRight.split("p")[0]);
 //console.log(pw);
 //console.log(typeof pw);
 //console.log(pw.split("p")[0]);
 //console.log(Number(pw.split("p")[0]));
 //console.log(typeof pw);
-cw = (pw - 2*ppr).toString() + "px";
+cw = (pw -2*pmr- 2*ppr).toString() + "px";
 console.log(cw);
 for(var i=0; i<markerImgClass.length; i++){
     styleWidth( markerImgClass[i], cw);
