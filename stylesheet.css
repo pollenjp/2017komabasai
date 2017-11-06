@@ -1,3 +1,7 @@
+body {
+	color : #ffffff;
+}
+
 /******************************************************************
  *********************    header  start    ************************
  ******************************************************************/
@@ -31,7 +35,6 @@ header .menulists li:hover {
 
 header .menulists {
     float: right;
-    /*background-color: #0000ff;*/
     padding-right: 40px;
     font-size: 20px;
     line-height: 55px;
@@ -42,7 +45,6 @@ header {
   width: 100%;
   background-color: rgba(128, 128,128, 0.5);
   border-bottom: 5px solid rgba(240, 240, 0, 0.9);
-  /*color: #ff0000;*/
   position : fixed;
   top : 0;
   left: 0;
@@ -86,7 +88,12 @@ header #toggle {
 }
 
 .active {
-	border-top: 5px solid rgba(255, 0, 0, 1);
+	/*border-top: 5px solid rgba(255, 0, 0, 1);*/
+	transition: all 0.3s;
+	transform: rotate(-10deg);
+	font-size: 25px;
+	color: rgba(255, 0, 0, 1);
+	/*transform-origin: top right;*/
 }
 
 /* ここからレスポンシブデザイン1000px */
@@ -433,7 +440,6 @@ header #toggle {
  ******************************************************************/
 
 body {
-  color : #ffffff;
   background-image: url("./images/testimg.jpg");
   background-position-x: 50%;
   background-position-y: 10%;
