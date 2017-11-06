@@ -18,6 +18,9 @@
 
 - 同じ要素内の複数のclassを指定する場合は、半角スペースで区切らずにそのまま繋げて記述します。
 
+## javascript jquery の注意点
+- .js が付いているファイルは分けましょう(ex: headerscript.js topscript.jp など)
+
 参照：http://rsv-rank.info/css/css-tech/classes/
 
 ## コメント
