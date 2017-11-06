@@ -84,7 +84,7 @@ header #toggle {
 }
 
 
-/* ここからレスポンシブデザイン */
+/* ここからレスポンシブデザイン1000px */
 @media only screen and (max-width: 1000px) {
 
   .header-top {
@@ -157,7 +157,86 @@ header #toggle {
   }
 
 }
-/*ここまでレスポンシブデザイン*/
+/*ここまでレスポンシブデザイン1000px*/
+
+/* ここからレスポンシブデザイン750px */
+@media only screen and (max-width: 600px) {
+/*
+  header {
+    height: 12%;
+  }
+*/
+  header .header-top {
+    display: none;
+  }
+
+  header .menulists {
+    display: none;
+    padding-right: 0px;
+    /*width: 100vw;*/
+    /*height: 75px;*/
+  }
+
+  header .menulists li {
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 1);
+    border-bottom: 1px solid #000000;
+  }
+
+  header .header-top:hover{
+    background-color: rgba(160, 160, 160, 1);
+  }
+
+  header #toggle {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: rgba(96, 96, 96, 1);
+    font-size: 30px;
+    font-family : serif;
+  }
+
+  header #toggle a {
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #000;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-decoration: none;
+    height: 52px;
+  }
+
+  header #toggle a:before {
+    margin-top: -6px;
+  }
+
+  header #toggle a:after {
+    margin-top: 2px;
+  }
+
+  header #toggle .top_responsive {
+    float: left;
+    border-right: 1px solid #000000;
+    text-align: center;
+    width: 100px;
+    z-index : 50;
+  }
+
+  header #toggle .top_responsive:hover {
+    font-size: 35px;
+  }
+
+  header #toggle .menu_responsive {
+    margin-left: 100px;
+  }
+
+  header #toggle .menu_responsive:hover {
+    font-size: 35px;
+  }
+
+}
+/*ここまでレスポンシブデザイン750px*/
 
 /******************************************************************
  *********************    header  start    ************************
