@@ -1,14 +1,18 @@
 # 2017komabasai 〜2017駒場祭特設ページ〜
 
-## headerのタスク
+## header task
 
  - headerをtop以外のときに半透明にする
  - hover時のカーソルの変化
  - hover方向が上の時に、menuが閉じるようにする
  - スマホで横にした時menuがスクロールできるようにする
  - スマホで縦にした時にタップしやすい/見やすい程度にヘッダの縦幅を調節する
+
 ## AR task
 - resizing the picutures
+
+## layout task
+- デザイン班に背景を受注
 
 ## cssの注意点
 - 入れ子になっている要素にcssを適用させたいとき
@@ -17,6 +21,9 @@
     - 必ず入れ子の順番で記述します。
 
 - 同じ要素内の複数のclassを指定する場合は、半角スペースで区切らずにそのまま繋げて記述します。
+
+## javascript jquery の注意点
+- .js が付いているファイルは分けましょう(ex: headerscript.js topscript.jp など)
 
 参照：http://rsv-rank.info/css/css-tech/classes/
 

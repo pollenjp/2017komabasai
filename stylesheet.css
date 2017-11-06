@@ -2,10 +2,6 @@
  *********************    header  start    ************************
  ******************************************************************/
 
-body {
-  color : #ffffff;
-}
-
 header .menulists li {
 	transition: all 0.4s;
   list-style: none;
@@ -426,6 +422,7 @@ header #toggle {
  ******************************************************************/
 
 body {
+  color : #ffffff;
   background-image: url("./testimg.jpg");
   background-position-x: 50%;
   background-position-y: 10%;
@@ -433,6 +430,7 @@ body {
   background-attachment: fixed;
   /*background-repeat: no-repeat;*/
   width: 100vw;
+  /*background-repeat: no-repeat;*/
 }
 
 /******************************************************************

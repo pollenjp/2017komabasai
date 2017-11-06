@@ -21,28 +21,25 @@ $(function() {
       $(this).animate({'font-size': '35px'}, 10);
   });
 
-  //ナビゲーションバーの機能部分
+  //TOPを押すと一番上に戻る
   $('.header-top').click(function(){
     //var id = $(this).attr('href');
     //var position = $(id).offset().top;
     $('html, body').animate({'scrollTop': 0}, 500);
   });
 
+  //headerのボタンを押すと、そのセクションに飛ばす
   $('header a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).get(0).offsetTop;
     $('html, body').animate({'scrollTop': position - 80}, 500);
   });
 
-  //スクロールしたい要素の高さの取得（普通は<body>）
-  var getHeight = $('body').height();
-  $(window).scroll(function () { //スクロールする度に行う処理。
-    var ScrollTop = $(document).scrollTop(); //上部を基準にしたスクロール場所の取得
-    var bgPosition = (600 / getHeight) * ScrollTop + 10; // 80←%を動かす値(10%→90%等), 10←初期値
-
-    $('body').css(//background-position-yのコントロール
-      {backgroundPositionY: bgPosition + "%"}
-    );
+  //背景の視差効果
+  $(window).scroll(function() {
+    var mypos = $(document).scrollTop();
+    var bgsc = - 0.5 * mypos + 10;
+    $('body').css({'background-position-y': bgsc + "px"});
   });
 
   //ここからレスポンシブデザイン
