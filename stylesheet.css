@@ -2,6 +2,10 @@
  *********************    header  start    ************************
  ******************************************************************/
 
+header a {
+	display: block;
+}
+
 header .menulists li {
 	transition: all 0.4s;
   list-style: none;
@@ -81,6 +85,9 @@ header #toggle {
   display: none;
 }
 
+.active {
+	border-top: 5px solid rgba(255, 0, 0, 1);
+}
 
 /* ここからレスポンシブデザイン1000px */
 @media only screen and (max-width: 1000px) {
