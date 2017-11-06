@@ -1,12 +1,9 @@
 # 2017komabasai 〜2017駒場祭特設ページ〜
 
 ## header task
-
- - headerをtop以外のときに半透明にする
- - hover時のカーソルの変化
- - hover方向が上の時に、menuが閉じるようにする
- - スマホで横にした時menuがスクロールできるようにする
- - スマホで縦にした時にタップしやすい/見やすい程度にヘッダの縦幅を調節する
+- hover方向が上の時に、menuが閉じるようにする
+- スマホで横にした時menuがスクロールできるようにする
+- 今いる場所がどこかheaderからわかるようにする
 
 ## AR task
 - resizing the picutures

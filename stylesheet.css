@@ -219,18 +219,22 @@ header #toggle {
     text-align: center;
     width: 100px;
     z-index : 50;
+    transition: all 0.4s;
   }
 
   header #toggle .top_responsive:hover {
     font-size: 35px;
+    transition: all 0.4s;
   }
 
   header #toggle .menu_responsive {
     margin-left: 100px;
+    transition: all 0.4s;
   }
 
   header #toggle .menu_responsive:hover {
     font-size: 35px;
+    transition: all 0.4s;
   }
 
 }
@@ -255,7 +259,7 @@ header #toggle {
  ******************************************************************/
   #story {
     height: 750px;
-  	background-image: url("./Story-img.png");
+  	background-image: url("./images/Story-img.png");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: 50%;
@@ -423,7 +427,7 @@ header #toggle {
 
 body {
   color : #ffffff;
-  background-image: url("./testimg.jpg");
+  background-image: url("./images/testimg.jpg");
   background-position-x: 50%;
   background-position-y: 10%;
   background-size: 100vw;
