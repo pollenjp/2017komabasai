@@ -3,6 +3,7 @@
  * Description: スクロールに合わせてActiveクラスを付与する
  * Created : Dec 2, 2015
  * Dependencies：jQuery1.11.XX  Waypoints.js
+ *ありがたく使わせていただきます(BOBOより)
  **/
 
 var ScrollChange = new Object();
@@ -17,7 +18,7 @@ ScrollChange = {
     active_class_name:'active',
 
     // Scroll offset
-    header_offset:155,
+    header_offset:80,
 
     // 検出位置の差分（大きいほどターゲットより下にActive変更ポイントが来る）
     // 0は正しく動作しません。
@@ -47,19 +48,20 @@ ScrollChange = {
         $('.'+this.active_class_name).removeClass(this.active_class_name);
         return this;
     },
+
     AddClass:function(sp){
         // スクロールポイントのIDを取得する sp:スクロールポイント
         var target_class= 'a[href*="' + sp + '"]';
         // ターゲットのDOMを取得し、クラス追加
         $(target_class).addClass(this.active_class_name);
-
     }
+
 }
 
 $(function(){
     // active-funcが付いている箇所をn個取得する
     var w = $('.' + ScrollChange.target_name);
-    var offset2 = ScrollChange.header_offset-ScrollChange.header_offset2;
+    var offset2 = ScrollChange.header_offset - ScrollChange.header_offset2;
     // active-funcの回数分ループ
     for (var i = 0; i < w.length; i++) {
       new Waypoint({
@@ -75,24 +77,4 @@ $(function(){
         },offset:offset2
       });
     }
-
-    /*
-    // #で始まるアンカーをクリックした場合に処理
-    if(ScrollChange.smooth_scroll){
-      $('a[href^=#]').click(function() {
-        // アンカーの値取得
-        var href= $(this).attr('href');
-
-        // 移動先を取得
-        var target = $(href == '#' || href == '' ? 'html' : href);
-
-
-        // 移動先スクロール位置を数値で取得
-        var position = target.offset().top - (ScrollChange.header_offset - 5);
-
-        $('body,html').animate({scrollTop:position}, ScrollChange.scroll_speed);
-        return false;
-      });
-    }
-    */
 });

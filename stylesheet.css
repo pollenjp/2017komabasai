@@ -2,6 +2,10 @@
  *********************    header  start    ************************
  ******************************************************************/
 
+header a {
+	display: block;
+}
+
 header .menulists li {
 	transition: all 0.4s;
   list-style: none;
@@ -82,8 +86,7 @@ header #toggle {
 }
 
 .active {
-	color: rgba(0, 0, 0, 1);
-	background-color: rgba(255, 255, 255, 1);
+	border-top: 5px solid rgba(255, 0, 0, 1);
 }
 
 /* ここからレスポンシブデザイン1000px */
