@@ -7,6 +7,7 @@ body {
 }
 
 header .menulists li {
+	transition: all 0.4s;
   list-style: none;
   float: left;
   /*padding-left: 40px;*/
@@ -53,6 +54,7 @@ header {
 }
 
 header .header-top {
+  transition: all 0.4s;
   height: 75px;
   float: left;
   padding: 0px 30px 0px 30px;
@@ -327,6 +329,10 @@ header #toggle {
 /******************************************************************
  *********************      AR  end     ***************************
  ******************************************************************/
+
+#story.container{
+	background-image: url(./story-img.png);
+}
 
 #access {
   color: #ffffff;
