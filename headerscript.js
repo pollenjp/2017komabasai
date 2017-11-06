@@ -59,10 +59,15 @@ $(function() {
 
   $(window).resize(function(){
     var win = $(window).width();
-    var p = 1000;
-    if(win > p){
+    if(win > 1000){
       $('.header-top').show();
       $('.menulists').show();
+    } else if (win < 600){
+      $('.header-top').hide();
+      $('.menulists').hide();
+      $('header .menulists li').click(function(){
+        $('.menulists').slideUp();
+      });
     } else {
       $('.header-top').hide();
       $('.menulists').hide();
