@@ -19,13 +19,12 @@
     - 条件としたいclass名を半角スペースで区切ってあげます。
     - 「要素名 class名」や「要素名 要素名」など、様々な場面で使われるメジャーな記述方法です。
     - 必ず入れ子の順番で記述します。
-
 - 同じ要素内の複数のclassを指定する場合は、半角スペースで区切らずにそのまま繋げて記述します。
+- 参照：http://rsv-rank.info/css/css-tech/classes/
 
 ## javascript jquery の注意点
 - .js が付いているファイルは分けましょう(ex: headerscript.js topscript.jp など)
 
-参照：http://rsv-rank.info/css/css-tech/classes/
 
 ## コメント
 アイデア/コメントがあれば、どんどん書いていってください！
