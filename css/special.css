@@ -6,10 +6,19 @@
   height: 750px;
 }
 
- #special .sp_img_link {
+#special .sp_link {
+  overflow: hidden;
+}
+
+#special .sp_img_link {
+  display: block;
+  border: 1px solid #CCC;
   border-radius: 10px;
-  right: 30;
+  position: relative;
+  left: 100px;
+  top: 100px;
   height: 30vh;
+  overflow: hidden;
 
   -webkit-transform: scale(1);
 	transform: scale(1);

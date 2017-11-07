@@ -2,7 +2,7 @@
 
 $(function() {
 
-  $('.sp_img_link').hover(function(){
+  $('.sp_img_link').click(function(){
     
   });
 
