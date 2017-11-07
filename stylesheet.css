@@ -186,13 +186,14 @@ header #toggle {
     display: none;
     padding-right: 0px;
     /*width: 100vw;*/
-    /*height: 75px;*/
+    /*height: 100vh;*/
   }
 
   header .menulists li {
     width: 100vw;
     background-color: rgba(128, 128, 128, 1);
     border-bottom: 1px solid #000000;
+		height: 12vh;
   }
 
   header .header-top:hover{
@@ -463,8 +464,12 @@ body {
  *********************    body  end    ****************************
  ******************************************************************/
 
+ element {
+ 	--bgclr: #00ff00;
+ }
+
  .preparing {
-   color: #ffffff;
+   color: var(--bgclr);
    width: 100vw;
    text-align: center;
  }
