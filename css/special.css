@@ -6,8 +6,20 @@
   height: 750px;
 }
 
-.sp_img_link {
+ #special .sp_img_link {
   border-radius: 10px;
+  right: 30;
+  height: 30vh;
+
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#special .sp_img_link:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 /******************************************************************

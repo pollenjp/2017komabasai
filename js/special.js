@@ -2,4 +2,8 @@
 
 $(function() {
 
+  $('.sp_img_link').hover(function(){
+    
+  });
+
 });
