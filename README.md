@@ -10,9 +10,7 @@
     - スマホページは修正完了
     - PCページで軽いズレあり(2017/11/07現在)
         - エラー症状：ページを開いた状態で左右に小さくスクロールできてしまう
-        - エラー動画(↓ )
-
-<iframe width="300" height="200" src="https://youtu.be/luGI_urucCs" frameborder="0 gesture="media"allowfullscreen"></iframe>
+        - エラー動画：https://youtu.be/luGI_urucCs
 
 ## layout task
 - デザイン班に背景を受注
