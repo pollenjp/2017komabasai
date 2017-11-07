@@ -51,10 +51,6 @@ header {
   z-index : 100;
 }
 
-#top {
-  margin-top: 80px;
-}
-
 header .header-top {
   transition: all 0.4s;
   height: 75px;
@@ -133,7 +129,7 @@ header #toggle {
     display: block;
     position: relative;
     padding: 12px 0 10px;
-    border-bottom: 1px solid #000;
+    /*border-bottom: 1px solid #000000;*/
     color: rgba(255, 255, 255, 1);
     text-align: center;
     text-decoration: none;
@@ -173,11 +169,18 @@ header #toggle {
 
 /* ここからレスポンシブデザイン600px */
 @media only screen and (max-width: 600px) {
-/*
-  header {
-    height: 12%;
-  }
-*/
+
+	header {
+	  height: 12.5vh;
+	  width: 100%;
+	  background-color: rgba(128, 128,128, 0.5);
+	  border-bottom: 5px solid rgba(240, 240, 0, 0.9);
+	  position : fixed;
+	  top : 0;
+	  left: 0;
+	  z-index : 100;
+	}
+
   header .header-top {
     display: none;
   }
@@ -185,14 +188,13 @@ header #toggle {
   header .menulists {
     display: none;
     padding-right: 0px;
-    /*width: 100vw;*/
-    /*height: 100vh;*/
+		height: 12.5vh;
   }
 
   header .menulists li {
     width: 100vw;
     background-color: rgba(128, 128, 128, 1);
-    border-bottom: 1px solid #000000;
+    border-top: 1px solid #00ff00;
 		height: 12vh;
   }
 
@@ -206,20 +208,20 @@ header #toggle {
     width: 100%;
     background-color: rgba(96, 96, 96, 1);
     font-size: 30px;
-    font-family : serif;
+    font-family: serif;
+		height: 12.5vh;
   }
 
   header #toggle a {
     display: block;
     position: relative;
-    padding: 12px 0 10px;
-    border-bottom: 1px solid #000;
+    /*padding: 12px 0 10px;*/
     color: rgba(255, 255, 255, 1);
     text-align: center;
     text-decoration: none;
-    height: 52px;
+		height: 12.5vh;
   }
-
+	/*
   header #toggle a:before {
     margin-top: -6px;
   }
@@ -227,7 +229,7 @@ header #toggle {
   header #toggle a:after {
     margin-top: 2px;
   }
-
+	*/
   header #toggle .top_responsive {
     float: left;
     border-right: 1px solid #000000;
@@ -235,6 +237,7 @@ header #toggle {
     width: 100px;
     z-index : 50;
     transition: all 0.4s;
+    height: 12.5vh;
   }
 
   header #toggle .top_responsive:hover {
@@ -245,13 +248,14 @@ header #toggle {
   header #toggle .menu_responsive {
     margin-left: 100px;
     transition: all 0.4s;
+		height: 12.5vh;
+		/*border-bottom: 1px solid #ff0000;*/
   }
 
   header #toggle .menu_responsive:hover {
     font-size: 35px;
     transition: all 0.4s;
   }
-
 }
 /*ここまでレスポンシブデザイン600px*/
 
