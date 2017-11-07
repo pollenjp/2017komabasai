@@ -6,14 +6,17 @@
   height: 750px;
 }
 
+/*
 #special .sp_link {
   overflow: hidden;
 }
+*/
 
 #special .sp_img_link {
   display: block;
   border: 1px solid #CCC;
-  border-radius: 10px;
+  border-radius: 100%;
+  opacity: 0.85;
   position: relative;
   left: 100px;
   top: 100px;
@@ -27,8 +30,12 @@
 }
 
 #special .sp_img_link:hover {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  opacity: 1.0;
+}
+
+#special .sp_img_link:active {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /******************************************************************
