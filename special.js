@@ -1,0 +1,5 @@
+//specialのjQueryをここに書きます.
+
+$(function() {
+
+});
