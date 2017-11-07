@@ -90,9 +90,9 @@ styleWidth(containerClass[0], cw);                          //arId.style.width =
 /******************************************************************
  ****************** #ar--.container--.block0 **********************
  ******************************************************************/
-if( window.matchMedia('(max-width:670px)').matches ){
+if( window.matchMedia('(max-width:450px)').matches ){
     // smart phone
-    //@media only screen and (max-width: 670px) {
+    //@media only screen and (max-width: 450px) {
     //    /* #ar .container .block0 */
     //    #ar .block0
     //    {
@@ -173,9 +173,9 @@ block0GreenClass[0].style.backgroundColor = "rgba(0, 255, 0, 0.6)";
 /***********************************************************
  *************** #ar .container .block0 .block1 ***********
  **********************************************************/
-if( window.matchMedia('(max-width:670px)').matches ){
+if( window.matchMedia('(max-width:450px)').matches ){
     // Smart Phone
-    //@media only screen and (max-width: 670px) {
+    //@media only screen and (max-width: 450px) {
     //    /* #ar .container .block0 .block1 */
     //    #ar .block1
     //    {
@@ -235,8 +235,8 @@ for(var i=0; i<markerImgClass.length; i++){
 /****************************************************
  ****************** #ar .clear1.left ***************
  ***************************************************/
-if( window.matchMedia("(max-width:670px)").matches ){
-    //@media only screen and (max-width: 670px) {
+if( window.matchMedia("(max-width:450px)").matches ){
+    //@media only screen and (max-width: 450px) {
     //    #ar .clear1.left
     //    {
     //        clear: left;
@@ -252,7 +252,7 @@ endClass[0].style.clear = "both";
 //    clear: both;
 //}
 //
-//@media only screen and (max-width: 670px) {
+//@media only screen and (max-width: 450px) {
 //    /* #ar .container .block0 .block1 */
 //    #ar .block1
 //    {
