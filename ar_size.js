@@ -73,10 +73,13 @@ arId.style.boxSizing = "border-box";
 //    box-sizing: border-box;
 //}
 var containerClass = arId.getElementsByClassName("container");     //container: length 1
-styleWidth(containerClass[0], "100%");       //arId.style.width = "100%";
 styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
 stylePadding(containerClass[0], "20px", "20px", "20px", "20px");
 containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
+pw = Number( getComputedStyle( document.body ).width.split("p")[0] );
+cmr = 20;                                                       // Current MarginRight
+cw = (pw -2*cmr).toString() + "px";                             // Current Width
+styleWidth(containerClass[0], cw);                          //arId.style.width = "100%";
 //#ar .container
 //{
 //    width: 100%;
@@ -85,7 +88,7 @@ containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
 //    background-color: rgba(95, 168, 160, 0.5);
 //}
 /******************************************************************
- ****************** #ar .container .block0 ************************
+ ****************** #ar--.container--.block0 **********************
  ******************************************************************/
 if( window.matchMedia('(max-width:670px)').matches ){
     // smart phone
@@ -101,9 +104,12 @@ if( window.matchMedia('(max-width:670px)').matches ){
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
     pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = (pw -2*pmr -2*ppr).toString() + "px";                                   // Current Width
+    styleMargin(containerClass[0], "10px", "10px", "10px", "10px");
+    cmr = 10;                                                       // Current MarginRight
+    cw = (pw -2*cmr -2*ppr).toString() + "px";                      // Current Width
     for(var i=0; i<block0Class.length; i++){
         styleWidth(block0Class[i], cw);
+        block0Class[i].style.float = "left";
     }
 } else if(window.matchMedia('(max-width:1000px)').matches ){
     //@media only screen and (max-width: 1000px) {
@@ -118,9 +124,10 @@ if( window.matchMedia('(max-width:670px)').matches ){
     pw = Number(ps.width.split("p")[0]);                            // Parent Width
     pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
     ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-    cw = (pw -2*pmr - 2*ppr).toString() + "px";                                   // Current Width
+    cw = (pw -2*pmr -2*ppr).toString() + "px";                      // Current Width
     for(var i=0; i<block0Class.length; i++){
         styleWidth(block0Class[i], cw);
+        block0Class[i].style.float = "left";
     }
 } else {
     //#ar .block0
@@ -138,6 +145,7 @@ if( window.matchMedia('(max-width:670px)').matches ){
     cw = ((pw-2*pmr-ppr*2)/2).toString() + "px";                          // Current Width
     for(var i=0; i<block0Class.length; i++){
         styleWidth(block0Class[i], cw);
+        block0Class[i].style.float = "left";
     }
 }
 
@@ -185,6 +193,7 @@ if( window.matchMedia('(max-width:670px)').matches ){
         block1Class[i].style.float = "left";
         styleMargin(block1Class[i], "5px", "5px", "5px", "5px");
         stylePadding(block1Class[i], "5px", "5px", "5px", "5px");
+        block1Class[i].style.float = "left";
     }
 } else {
     // Tablet, PC
@@ -206,6 +215,7 @@ if( window.matchMedia('(max-width:670px)').matches ){
         block1Class[i].style.float = "left";
         styleMargin(block1Class[i], "5px", "5px", "5px", "5px");
         stylePadding(block1Class[i], "5px", "5px", "5px", "5px");
+        block1Class[i].style.float = "left";
     }
 }
 /*****************************************************************
@@ -214,18 +224,13 @@ if( window.matchMedia('(max-width:670px)').matches ){
 var markerImgClass = arId.getElementsByClassName("marker-img");
 ps = getComputedStyle( block1Class[0] );
 pw = Number(ps.width.split("p")[0]);                // String --> remove "px" --> Number
-pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
 ppr = Number(ps.paddingRight.split("p")[0]);
-//console.log(pw);
-//console.log(typeof pw);
-//console.log(pw.split("p")[0]);
-//console.log(Number(pw.split("p")[0]));
-//console.log(typeof pw);
-cw = (pw -2*pmr- 2*ppr).toString() + "px";
-console.log(cw);
+cmr = 5;
+cw = (pw -2*cmr).toString() + "px";
 for(var i=0; i<markerImgClass.length; i++){
     styleWidth( markerImgClass[i], cw);
     markerImgClass[i].style.height=cw;
+    styleMargin(markerImgClass[i], "5px", "5px", "5px", "5px");
 }
 /****************************************************
  ****************** #ar .clear1.left ***************

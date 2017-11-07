@@ -288,12 +288,20 @@ header #toggle {
 #ar *
 {
     box-sizing: border-box;
+    /*
+    display: block;
+    */
 }
 
+/***********ここ以下(AR)はJavaScript上でも実装している(削除可能）*******/
 #ar .container
 {
-    width: 100%;
+    /*width: 100%;
+    */
+    text-align: center;
+    /*
     margin: 20px;
+    */
     padding: 20px;
     background-color: rgba(95, 168, 160, 0.5);
 }
@@ -302,6 +310,7 @@ header #toggle {
 #ar .block0
 {
     width: calc( (100% - 20px - 20px)/2);
+    text-align: center;
     float: left;
     margin: 10px;
     padding: 10px;
@@ -350,12 +359,12 @@ header #toggle {
     /* #ar .container .block0 */
     #ar .block0
     {
-        width: calc( 100% - 20px - 20px );
+        width: calc( 100% - 10px - 10px );
     }
     /* #ar .container .block0 .block1 */
     #ar .block1
     {
-        width: calc( 100% - 20px - 20px );
+        width: calc( 100% - 5px - 5px );
     }
     /* #ar .container .block0 .clear1.left */
     #ar .clear1.left
