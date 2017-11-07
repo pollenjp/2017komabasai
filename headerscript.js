@@ -3,6 +3,8 @@
 $(function() {
 
   $('header .menulists li').eq(0).css('border-left', '1px solid #000000');
+  var header_hight = $('header').height();
+  $('#top').css('margin-top', header_hight);
 
   //ナビゲーションメニューにhoverした時の反応
   $('.menulist').hover(
@@ -32,7 +34,7 @@ $(function() {
   $('header a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).get(0).offsetTop;
-    $('html, body').animate({'scrollTop': position - 80}, 500);
+    $('html, body').animate({'scrollTop': position - header_hight}, 500);
   });
 
   //背景の視差効果
@@ -75,6 +77,11 @@ $(function() {
 
       $('.header-top').hide();
       $('.menulists').hide();
+      /*
+      $('header #toggle .menu_responsive').click(function(){
+        $('header #toggle a').css({'border-bottom': '1px solid #ff0000'});
+      });
+      */
       $('header .menulists li').click(function(){
         $('.menulists').slideUp();
       });

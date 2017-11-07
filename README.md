@@ -5,7 +5,6 @@
 ## header task
 - hover方向が上の時に、menuが閉じるようにする
 - スマホで横にした時menuがスクロールできるようにする
-- 今いる場所がどこかheaderからわかるようにする
 
 ## AR task
 - resizing the picutures
