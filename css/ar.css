@@ -1,0 +1,94 @@
+/******************************************************************
+ *********************    START AR    *****************************
+ ******************************************************************/
+
+#ar *
+{
+    box-sizing: border-box;
+    /*
+    display: block;
+    */
+}
+
+/***********ここ以下(AR)はJavaScript上でも実装している(削除可能）*******/
+#ar .container
+{
+    /*width: 100%;
+    */
+    text-align: center;
+    /*
+    margin: 20px;
+    */
+    padding: 20px;
+    background-color: rgba(95, 168, 160, 0.5);
+}
+
+/* #ar .container .block0 */
+#ar .block0
+{
+    width: calc( (100% - 20px - 20px)/2);
+    text-align: center;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+/* #ar .container .clear0.left */
+#ar .clear0.left
+{
+    clear: left;
+}
+
+/* #ar .container .block0.blue */
+#ar .block0.blue
+{
+    background-color: rgba(174, 232, 246, 0.6);
+}
+
+/* #ar .container .block0.green */
+#ar .block0.green
+{
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+/* #ar .container .block0 .block1 */
+#ar .block1
+{
+    width: calc((100% - 10px - 10px)/2);
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+#ar .end
+{
+    clear: both;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    /* #ar .container .block0 */
+    #ar .block0
+    {
+        width: calc( 100% - 20px - 20px );
+    }
+}
+@media only screen and (max-width: 670px) {
+    /* #ar .container .block0 */
+    #ar .block0
+    {
+        width: calc( 100% - 10px - 10px );
+    }
+    /* #ar .container .block0 .block1 */
+    #ar .block1
+    {
+        width: calc( 100% - 5px - 5px );
+    }
+    /* #ar .container .block0 .clear1.left */
+    #ar .clear1.left
+    {
+        clear: left;
+    }
+}
+/******************************************************************
+ *********************      AR  end     ***************************
+ ******************************************************************/

@@ -2,9 +2,11 @@
 ## Tips
 - スマホの縦と横でレスポンシブにデザインを変えたい方は450pxあたりを境目にするといいと思う。
 - 参考：歴代iPhoneたちのサイズ（ https://webskillup.com/ety/20140919180945/ )
+
 ## header task
 - hover方向が上の時に、menuが閉じるようにする
-- スマホで横にした時menuがスクロールできるようにする
+- スマホで横にした時menuがスクロールできるようにする//これは厳しい
+- header のシステム上の作業はひとまず完了！
 
 ## AR task
 - resizing the picutures
@@ -23,6 +25,8 @@
     - 必ず入れ子の順番で記述します。
 - 同じ要素内の複数のclassを指定する場合は、半角スペースで区切らずにそのまま繋げて記述します。
 - 参照：http://rsv-rank.info/css/css-tech/classes/
+
+- cssファイルを各セクションごとに設けてあります。混同/競合が起きないようにするため、作業中のセクションの名前がついているcssファイルに要素を追加してください。
 
 ## javascript jquery の注意点
 - .js が付いているファイルは分けましょう(ex: headerscript.js topscript.jp など)
