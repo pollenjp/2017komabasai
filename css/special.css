@@ -3,6 +3,7 @@
  ******************************************************************/
 
 #special {
+  cursor: default;
   height: 750px;
 }
 
@@ -13,7 +14,6 @@
 */
 
 #special .sp_img_link {
-  display: block;
   border: 1px solid #CCC;
   border-radius: 100%;
   opacity: 0.85;
@@ -22,6 +22,7 @@
   top: 100px;
   height: 30vh;
   overflow: hidden;
+  background-color: #fff;
 
   -webkit-transform: scale(1);
 	transform: scale(1);
@@ -38,6 +39,15 @@
 	transform: scale(1.1);
 }
 
+element {
+ --bgclr: #00ff00;
+}
+
+.preparing {
+  color: var(--bgclr);
+  width: 100vw;
+  text-align: center;
+}
 /******************************************************************
  *********************    special  end    *************************
  ******************************************************************/
