@@ -1,229 +1,237 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>駒場祭特設ページ</title>
-    <!--
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
-    -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./stylesheet.css" type="text/css">
-  </head>
-  <body>
-    <header>
-      <!--
-        ==========================================================
-        header block
-        ==========================================================
-      -->
-      <div class = "header-top">
-        <a>TOP</a>
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>駒場祭特設ページ</title>
+        <script src = "./jquery-3.2.1.js" type = "text/javascript"></script>
+        <script src = "./noframework.waypoints.min.js" type = "text/javascript"></script>
+        <script src = "./ChangeScroll.js" type = "text/javascript"></script>
+        <script src = "js/jquery.waypoints.min.js" type = "text/javascript"></script>
+        <script src="ScrollChange.js"></script>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+    </head>
+    <body>
+        <header>
+              <!--
+                  ==========================================================
+                  START header block
+                  ==========================================================
+              -->
+          <div class = "header-top">
+            <a>TOP</a>
+          </div>
+
           <!-- レスポンシブデザイン用-->
           <div id = "toggle">
-            <a href = "#">MENU</a>
-      </div>
-      <div class = "menulists">
-        <ul>
-          <li class = "menulist">
-            <a href = "#story" class = "button">STORY</a>
-          </li>
-          <li class = "menulist">
-            <a href = "#movie">MOVIE</a>
-          </li>
-          <li class = "menulist">
-            <a href = "#ar">AR</a>
-          </li>
-          <li class = "menulist">
-            <a href = "#access">ACCESS</a>
-          </li>
-          <li class = "menulist">
-            <a href = "#special">SPECIAL</a>
-          </li>
-          <li class = "menulist">
-            <a href = "#vote">VOTE</a>
-          </li>
-          <li class = "menulist">
-            <a href = "#others">OTHERS</a>
-          </li>
-        </ul>
-      </div>
-      <!--
-        ==========================================================
-        END header block
-        ==========================================================
-      -->
-    </header>
-    <div id="top" class="tag1">
-      <!--
-        ==========================================================
-        START top block
-        ==========================================================
-      -->
-      <p>Top</p>
-      <!--
-        ==========================================================
-        END top block
-        ==========================================================
-      -->
-    </div>
-    <div id="story" class="tag2">
-      <!--
-        ==========================================================
-        START story block
-        ==========================================================
-      -->
-      <p>Story</p>
-      <!--
-        ==========================================================
-        END story block
-        ==========================================================
-      -->
-    </div>
-    <div id="movie" class="tag3">
-      <!--
-        ==========================================================
-        START movie block
-        ==========================================================
-      -->
-      <p>Movie</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/vEg8CRxvXug" frameborder="0" gesture="media"allowfullscreen></iframe>
-      <!--
-        ==========================================================
-        END movie block
-        ==========================================================
-      -->
-    </div>
-    <div id="ar" class="tag4">
-      <!--
-        ==========================================================
-        ==============    Start AR block      ====================
-        ==========================================================
-      -->
-      <p>AR</p>
-      <div class="container">
-        <div class="block0 blue">
-          <!-- <img src="./pic_ar/utvirtual_logo.jpeg"> -->
-          <div class="block1">
-            <img id="arMarker1" alt="marker" width="300" height="300" src="./pic_ar/utvirtual_logo_marker.png">
+            <div class = "top_responsive">
+              <a href = "#">TOP</a>
+            </div>
+            <div class = "menu_responsive">
+              <a href = "#">MENU</a>
+            </div>
           </div>
-          <div class="block1">
-            <p class="head">
-            AR！スマホで体験！
-            </p>
-            <br>
-            <p class="body">
-            　今年の駒場祭ではーーにあるUT-virtualの看板にカメラをかざすと3Dのオブジェクトが浮かび上がる！...
-            </p>
+          <div class = "menulists">
+              <ul>
+                  <li class = "menulist">
+                      <a href = "#story">STORY</a>
+                  </li>
+                  <li class = "menulist">
+                      <a href = "#movie">MOVIE</a>
+                  </li>
+                  <li class = "menulist">
+                      <a href = "#ar">AR</a>
+                  </li>
+                  <li class = "menulist">
+                      <a href = "#access">ACCESS</a>
+                  </li>
+                  <li class = "menulist">
+                      <a href = "#special">SPECIAL</a>
+                  </li>
+                  <li class = "menulist">
+                      <a href = "#vote">VOTE</a>
+                  </li>
+                  <li class = "menulist">
+                      <a href = "#others">OTHERS</a>
+                  </li>
+              </ul>
+              <!--
+                  ==========================================================
+                  END header block
+                  ==========================================================
+              -->
           </div>
+        </header>
+        <div id="top" class="tag1 active-func">
+            <!--
+                ==========================================================
+                START top block
+                ==========================================================
+            -->
+            <h1>Top</h1>
+            <!--
+                ==========================================================
+                END top block
+                ==========================================================
+            -->
         </div>
-        <!-- <div class="clear0 left"></div> -->
-        <div class="block0 green">
-          <div class="block1">
-            <p class="head">
-            AR！スマホで体験！
-            </p>
-            <br>
-            <p class="body">
-            　今年の駒場祭ではーーにあるUT-virtualの看板にカメラをかざすと3Dのオブジェクトが浮かび上がる！...
-            </p>
-          </div>
-          <div class="block1">
-            <img id="arMarker2" alt="marker" width="250" height="250" src="./pic_ar/utvirtual_logo_marker.png">
-          </div>
-          <div class="clear1 left"></div>
+        <div id="story" class="tag2 active-func">
+            <!--
+                ==========================================================
+                START story block
+                ==========================================================
+            -->
+            <h1>Story</h1>
+            <!--
+                ==========================================================
+                END story block
+                ==========================================================
+            -->
         </div>
-        <div class="clear0 left"></div>
-      </div>
-      <div class="end"></div>
-      <script src="./ar_size.js"></script>
-      <!--
-        ==========================================================
-        ================    End AR block    ======================
-        ==========================================================
-      -->
-    </div>
-    <div id="access" class="tag5">
-      <!--
-        ==========================================================
-        START access block
-        ==========================================================
-      -->
-      <p>Access</p>
-      <!--
-        ==========================================================
-        END access block
-        ==========================================================
-      -->
-    </div>
-    <div id="special" class="tag6">
-      <!--
-        ==========================================================
-        START special block
-        ==========================================================
-      -->
-      <p>Special ~東大美女図鑑コラボ企画！~</p>
-      <!--
-        ==========================================================
-        END special block
-        ==========================================================
-      -->
-    </div>
-    <div id="vote" class="tag7">
-      <!--
-        ==========================================================
-        START vote block
-        ==========================================================
-      -->
-      <p>Vote</p>
-      <!--
-        ==========================================================
-        END vote block
-        ==========================================================
-      -->
-    </div>
-    <div id="others" class="tag8">
-      <!--
-        ==========================================================
-        START others block
-        ==========================================================
-      -->
-      <p>Others</p>
-      <!--
-        ==========================================================
-        END others block
-        ==========================================================
-      -->
-    </div>
-    <!--
-      ==========================================================
-      fin
-      ==========================================================
-    -->
-    <div id = "idtest" class = "classtest">
-      <div>test</div>
-      <ul>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-      <div>
+        <div id="movie" class="tag3 active-func">
+            <!--
+                ==========================================================
+                START movie block
+                ==========================================================
+            -->
+            <h1>Movie</h1>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/vEg8CRxvXug" frameborder="0" gesture="media"allowfullscreen></iframe>
+            <!--
+                ==========================================================
+                END movie block
+                ==========================================================
+            -->
+        </div>
+        <div id="ar" class="tag4 active-func">
+            <!--
+                ==========================================================
+                ==============    START AR block      ====================
+                ==========================================================
+            -->
+            <h1>AR</h1>
+            <div class="container">
+                <div class="block0 blue">
+                    <!-- <img src="./pic_ar/utvirtual_logo.jpeg"> -->
+                    <div class="block1">
+                        <img id="arMarker1" class="marker-img" alt="marker" width="300" height="300" src="./pic_ar/utvirtual_logo_marker.png">
+                    </div>
+                    <div class="block1">
+                        <p class="head">
+                        AR！スマホで体験！
+                        </p>
+                        <br>
+                        <p class="body">
+                        　今年の駒場祭ではーーにあるUT-virtualの看板にカメラをかざすと3Dのオブジェクトが浮かび上がる！...
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="clear0 left"></div> -->
+                <div class="block0 green">
+                    <div class="block1">
+                        <p class="head">
+                        AR！スマホで体験！
+                        </p>
+                        <br>
+                        <p class="body">
+                        　今年の駒場祭ではーーにあるUT-virtualの看板にカメラをかざすと3Dのオブジェクトが浮かび上がる！...
+                        </p>
+                    </div>
+                    <div class="block1">
+                        <img id="arMarker2" class="marker-img" alt="marker" width="250" height="250" src="./pic_ar/utvirtual_logo_marker.png">
+                    </div>
+                    <div class="clear1 left"></div>
+                </div>
+                <div class="clear0 left"></div>
+            </div>
+            <div class="end"></div>
+            <script src="./ar_size.js"></script>
+            <!--
+                ==========================================================
+                ================    End AR block    ======================
+                ==========================================================
+            -->
+        </div>
+        <div id="access" class="tag5 active-func">
+            <!--
+                ==========================================================
+                START access block
+                ==========================================================
+            -->
+            <h1>Access</h1>
+            <div class="container">
+                <h2>Information</h2>
+                <ul>
+                    <li>日時：11/24(金)～11/26(日)</li>
+                    <li>料金：500円/人</li>
+                    <li>予約：不要</li>
+                    <li>場所：東京大学駒場キャンパス1号館112教室</li>
+                    <img src = "./images/komaba_map.png" alt = "キャンパスマップ">
+                </ul>
+            </div>
+            <!--
+                ==========================================================
+                END access block
+                ==========================================================
+            -->
+        </div>
+        <div id="special" class="tag6 active-func">
+            <!--
+                ==========================================================
+                START special block
+                ==========================================================
+            -->
+            <h1>Special ~東大美女図鑑コラボ企画！~</h1>
+            <p class = "preparing">ただいま準備中</p>
+            <p class = "preparing">Coming Soon!</p>
+            <!--
+                ==========================================================
+                END special block
+                ==========================================================
+            -->
+        </div>
+        <div id="vote" class="tag7 active-func">
+            <!--
+                ==========================================================
+                START vote block
+                ==========================================================
+            -->
+            <h1>Vote</h1>
+            <div class="container">
+                <p>
+                    駒場グランプリでは是非「Wonder Sphere」にご投票ください！<br>
+                    <a href="#">投票はこちらから</a>
+                </p>
+            </div>
+            <!--
+                ==========================================================
+                END vote block
+                ==========================================================
+            -->
+        </div>
+        <div id="others" class="tag8 active-func">
+            <!--
+                ==========================================================
+                START others block
+                ==========================================================
+            -->
+            <h1>Others</h1>
+            <!--
+                ==========================================================
+                END others block
+                ==========================================================
+            -->
+        </div>
+        <!--
+            ==========================================================
+            fin
+            ==========================================================
+        -->
+        <div id = "idtest" class = "classtest">
+            <div>test</div>
+        </div>
+
         <script src="headerscript.js"></script>
-  </body>
+    </body>
 </html>
