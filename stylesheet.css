@@ -191,7 +191,7 @@ header #toggle {
     width: 100vw;
     background-color: rgba(128, 128, 128, 1);
     border-top: 1px solid #00ff00;
-		height: 12vh;
+		height: 10vh;
   }
 
   header .header-top:hover{
