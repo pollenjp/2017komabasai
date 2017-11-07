@@ -113,6 +113,7 @@ header #toggle {
   }
 
   header .menulists li {
+		line-height: normal;
     width: 100vw;
     background-color: rgba(128, 128, 128, 1);
     border-top: 1px solid #00ff00;
@@ -142,15 +143,6 @@ header #toggle {
     text-decoration: none;
 		height: 10vh;
   }
-	/*
-  header #toggle a:before {
-    margin-top: -6px;
-  }
-
-  header #toggle a:after {
-    margin-top: 2px;
-  }
-	*/
   header #toggle .top_responsive {
     float: left;
     border-right: 1px solid #000000;
@@ -170,7 +162,6 @@ header #toggle {
     margin-left: 100px;
     transition: all 0.4s;
 		height: 10vh;
-		/*border-bottom: 1px solid #ff0000;*/
   }
 
   header #toggle .menu_responsive:hover {

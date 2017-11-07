@@ -73,7 +73,7 @@ $(function() {
         $('body').css({'background-position-y': bgsc + "px"});
       });
 
-    } else if (win < 600){
+    } else if (win < 450){
 
       $('.header-top').hide();
       $('.menulists').hide();
