@@ -7,19 +7,21 @@
   height: 750px;
 }
 
-/*
+
 #special .sp_link {
-  overflow: hidden;
+  display: block;
+  /*overflow: hidden;*/
 }
-*/
 
 #special .sp_img_link {
   border: 1px solid #CCC;
   border-radius: 100%;
   opacity: 0.85;
+  /*
   position: relative;
   left: 100px;
   top: 100px;
+  */
   height: 30vh;
   overflow: hidden;
   background-color: #fff;
