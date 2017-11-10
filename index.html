@@ -5,11 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>駒場祭特設ページ</title>
         <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-        <script src = "./jquery-3.2.1.js" type = "text/javascript"></script>
-        <script src = "./noframework.waypoints.min.js" type = "text/javascript"></script>
-        <script src = "./ChangeScroll.js" type = "text/javascript"></script>
-        <script src = "js/jquery.waypoints.min.js" type = "text/javascript"></script>
-        <script src="ScrollChange.js"></script>
+        <script src = "./js/jquery-3.2.1.js" type = "text/javascript"></script>
+        <script src = "./js/noframework.waypoints.min.js" type = "text/javascript"></script>
+        <script src = "./js/ScrollChange.js" type = "text/javascript"></script>
 
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
@@ -74,7 +72,7 @@
               -->
           </div>
         </header>
-        <div id="top" class="tag1 active-func">
+        <div id = "top" class = "tag1 active-func">
             <!--
                 ==========================================================
                 START top block
@@ -87,7 +85,7 @@
                 ==========================================================
             -->
         </div>
-        <div id="story" class="tag2 active-func">
+        <div id = "story" class = "tag2 active-func">
             <!--
                 ==========================================================
                 START story block
@@ -107,14 +105,14 @@
                 ==========================================================
             -->
             <h1>Movie</h1>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/vEg8CRxvXug" frameborder="0" gesture="media"allowfullscreen></iframe>
+            <iframe width = "300" height = "200" src = "https://www.youtube.com/embed/vEg8CRxvXug" frameborder = "0" gesture = "media"allowfullscreen></iframe>
             <!--
                 ==========================================================
                 END movie block
                 ==========================================================
             -->
         </div>
-        <div id="ar" class="tag4 active-func">
+        <div id = "ar" class = "tag4 active-func">
             <!--
                 ==========================================================
                 ==============    START AR block      ====================
@@ -163,14 +161,14 @@
                 ==========================================================
             -->
         </div>
-        <div id="access" class="tag5 active-func">
+        <div id = "access" class = "tag5 active-func">
             <!--
                 ==========================================================
                 START access block
                 ==========================================================
             -->
             <h1>Access</h1>
-            <div class="container">
+            <div class = "container">
                 <h2>Information</h2>
                 <ul>
                     <li>日時：11/24(金)～11/26(日)</li>
@@ -186,33 +184,45 @@
                 ==========================================================
             -->
         </div>
-        <div id="special" class="tag6 active-func">
+        <div id = "special" class = "tag6 active-func">
             <!--
                 ==========================================================
                 START special block
                 ==========================================================
             -->
             <h1>Special ~東大美女図鑑コラボ企画！~</h1>
-            <p class = "preparing">ただいま準備中</p>
-            <p class = "preparing">Coming Soon!</p>
+              <div class = "sp_link">
+                <a href = "http://stems-ut.jp/utsweetheart/" target = "_blank"><img src = "./images/bijozukan.jpg" alt = "東大美女図鑑" class = "sp_img_link"></a>
+              </div>
+              <div>
+                <p>東大美女図鑑の屋台でVR体験をすると、なんとWonder Sphere VRの100円引きチケットが手に入ります！！</p>
+                <p>2016年度のミス東大グランプリに輝いた、篠原梨奈さんがVR空間に登場！駒場祭の各企画を案内します！</p>
+              </div>
+              <p class = "preparing">ただいま準備中</p>
+              <p class = "preparing">Coming Soon!</p>
             <!--
                 ==========================================================
                 END special block
                 ==========================================================
             -->
+            <script src = "./js/special.js"></script>
         </div>
-        <div id="vote" class="tag7 active-func">
+        <div id = "vote" class = "tag7 active-func">
             <!--
                 ==========================================================
                 START vote block
                 ==========================================================
             -->
             <h1>Vote</h1>
-            <div class="container">
+            <div class = "container">
                 <p>
                     駒場グランプリでは是非「Wonder Sphere」にご投票ください！<br>
-                    <a href="#">投票はこちらから</a>
+                    <a href = "#">投票はこちらから</a>
                 </p>
+                <p>QRコードがこちら</p>
+                <div class = "qr_code">
+                  <img src = "./images/vote_qr.png" alt = "QRコード">
+                </div>
             </div>
             <!--
                 ==========================================================
@@ -220,7 +230,7 @@
                 ==========================================================
             -->
         </div>
-        <div id="others" class="tag8 active-func">
+        <div id = "others" class = "tag8 active-func">
             <!--
                 ==========================================================
                 START others block
@@ -239,6 +249,6 @@
             ==========================================================
         -->
 
-        <script src="header.js"></script>
+        <script src = "./js/header.js"></script>
     </body>
 </html>

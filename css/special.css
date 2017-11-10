@@ -3,9 +3,53 @@
  ******************************************************************/
 
 #special {
+  cursor: default;
   height: 750px;
 }
 
+
+#special .sp_link {
+  display: block;
+  /*overflow: hidden;*/
+}
+
+#special .sp_img_link {
+  border: 1px solid #CCC;
+  border-radius: 100%;
+  opacity: 0.85;
+  /*
+  position: relative;
+  left: 100px;
+  top: 100px;
+  */
+  height: 30vh;
+  overflow: hidden;
+  background-color: #fff;
+
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#special .sp_img_link:hover {
+  opacity: 1.0;
+}
+
+#special .sp_img_link:active {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+element {
+ --bgclr: #00ff00;
+}
+
+.preparing {
+  color: var(--bgclr);
+  width: 100vw;
+  text-align: center;
+}
 /******************************************************************
  *********************    special  end    *************************
  ******************************************************************/
