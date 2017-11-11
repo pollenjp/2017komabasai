@@ -4,6 +4,57 @@
 #top {
   height: 750px;
 }
+/*
+#top h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+}*/
+
+.slides {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+.slide {
+  width: calc((100% - 10px )/2);
+  margin: auto;
+  display: none;
+}
+
+.activeSlide {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.index-btn-wrapper {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  margin: 0 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+}
 /******************************************************************
  *********************    top  end    *****************************
  ******************************************************************/

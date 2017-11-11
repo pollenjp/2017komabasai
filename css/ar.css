@@ -20,7 +20,7 @@
     margin: 20px;
     */
     padding: 20px;
-    background-color: rgba(95, 168, 160, 0.5);
+    background-color: rgba(95, 168, 160, 0.9);
 }
 
 /* #ar .container .block0 */
@@ -41,13 +41,15 @@
 /* #ar .container .block0.blue */
 #ar .block0.blue
 {
-    background-color: rgba(174, 232, 246, 0.6);
+    border-radius: 20px;
+    background-color: rgba(174, 232, 246, 0.9);
 }
 
 /* #ar .container .block0.green */
 #ar .block0.green
 {
-    background-color: rgba(0, 255, 0, 0.6);
+    border-radius: 20px;
+    background-color: rgba(0, 255, 0, 0.8);
 }
 
 /* #ar .container .block0 .block1 */
