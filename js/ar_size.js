@@ -74,9 +74,10 @@ function dynamicResize(){
         pw = Number(ps.width.split("p")[0]);                            // Parent Width
         pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
         ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-        cmr = 10;                                                       // Current MarginRight
+        cmr = 20;                                                       // Current MarginRight
         cw = (pw -2*cmr -2*ppr).toString() + "px";                      // Current Width
         for(var i=0; i<block0Class.length; i++){
+            stylePadding(block0Class[i], "10px", "10px", "10px", "10px");
             styleMargin(block0Class[i], "20px", "20px", "20px", "20px");
             borderRadius(block0Class[i], "20px", "20px", "20px", "20px");
             styleWidth(block0Class[i], cw);
@@ -95,8 +96,10 @@ function dynamicResize(){
         pw = Number(ps.width.split("p")[0]);                            // Parent Width
         pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
         ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-        cw = (pw -2*pmr -2*ppr).toString() + "px";                      // Current Width
+        cmr = 20;
+        cw = (pw -2*cmr -2*ppr).toString() + "px";                      // Current Width
         for(var i=0; i<block0Class.length; i++){
+            stylePadding(block0Class[i], "10px", "10px", "10px", "10px");
             styleMargin(block0Class[i], "20px", "20px", "20px", "20px");
             borderRadius(block0Class[i], "20px", "20px", "20px", "20px");
             styleWidth(block0Class[i], cw);
@@ -116,10 +119,12 @@ function dynamicResize(){
         pw = Number(ps.width.split("p")[0]);                            // Parent Width
         pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
         ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-        cw = ((pw-2*pmr-ppr*2)/2).toString() + "px";                          // Current Width
+        cmr = 20;
+        cw = ((pw-2*ppr)/2-2*cmr).toString() + "px";                          // Current Width
         for(var i=0; i<block0Class.length; i++){
+            stylePadding(block0Class[i], "10px", "10px", "10px", "10px");
             styleMargin(block0Class[i], "20px", "20px", "20px", "20px");
-            borderRadius(block0Class[i], "20px", "20px", "20px", "20px");
+            borderRadius(block0Class[i], "10px", "10px", "10px", "10px");
             styleWidth(block0Class[i], cw);
             block0Class[i].style.float = "left";
         }
@@ -163,7 +168,8 @@ function dynamicResize(){
         pw = Number(ps.width.split("p")[0]);                            // Parent Width
         pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
         ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-        cw = (pw -2*pmr- 2*ppr).toString() + "px";                           // Current Width
+        cmr = 5;
+        cw = (pw -2*cmr- 2*ppr).toString() + "px";                           // Current Width
         for(var i=0; i<block1Class.length; i++){
             styleWidth(block1Class[i], cw );
             //block1Class[i].style.float = "left";
@@ -185,7 +191,8 @@ function dynamicResize(){
         pw = Number(ps.width.split("p")[0]);                            // Parent Width
         pmr = Number(ps.marginRight.split("p")[0]);                     // Parent MarginRight
         ppr = Number(ps.paddingRight.split("p")[0]);                    // Parent PaddingRight
-        cw = ((pw-2*pmr-ppr*2)/2).toString() + "px";                          // Current Width
+        cmr = 5;
+        cw = ((pw-ppr*2)/2 -2*cmr).toString() + "px";                          // Current Width
         for(var i=0; i<block1Class.length; i++){
             styleWidth(block1Class[i], cw );
             //block1Class[i].style.float = "left";
