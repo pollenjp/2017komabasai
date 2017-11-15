@@ -19,7 +19,6 @@
 }
 
 .slide {
-  width: calc((100% - 10px )/2);
   margin: auto;
   display: none;
 }
