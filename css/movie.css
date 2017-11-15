@@ -3,8 +3,26 @@
  ******************************************************************/
 
 #movie {
-  height: 750px;
+  height: auto;
 }
+.movie-wrapper {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+.movie-wrapper iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 7px;
+}
+
+
+
 
 /******************************************************************
  *********************    movie  end    ***************************
