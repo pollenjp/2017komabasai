@@ -13,14 +13,19 @@
 }*/
 
 #slide-wrap {
-  width: auto;
-  margin: 0;
+  width: 100%;
+  margin: auto;
   padding: 0;
 }
  
+#slide-wrap ul{
+  width: 100%;
+  margin: auto;
+}
+
 .slide {
-  width: auto;
-  margin: 0;
+  width: 100%;
+  margin: auto;
   display: none;
   list-style: none;
 }
@@ -28,7 +33,8 @@
 .slide img {
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 80%;
+  max-width: 1500px;
   margin: auto;
   overflow: hidden;
 }
