@@ -2,7 +2,7 @@
  *********************    top  start    ***************************
  ******************************************************************/
 #top {
-  height: 750px;
+  height: auto;
 }
 /*
 #top h1 {
@@ -12,29 +12,28 @@
   padding: 60px 0;
 }*/
 
-.slides {
-  width: 80%;
-  margin: auto;
+#slide-wrap {
+  width: auto;
+  margin: 0;
   padding: 0;
 }
-
+ 
 .slide {
-  margin: auto;
+  width: auto;
+  margin: 0;
   display: none;
+  list-style: none;
 }
-
-.activeSlide {
-  display: block;
-}
-
+ 
 .slide img {
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   margin: auto;
-  height: auto;
-  border-radius: 5px;
+  overflow: hidden;
 }
 
-.index-btn-wrapper {
+/*.index-btn-wrapper {
   text-align: center;
   font-size: 16px;
   margin-top: 20px;
@@ -53,7 +52,9 @@
 .index-btn:hover {
   color: #fff;
   background-color: #5cabd0;
-}
+}*/
+
+
 /******************************************************************
  *********************    top  end    *****************************
  ******************************************************************/
