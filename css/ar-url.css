@@ -1,0 +1,17 @@
+#ar_url {
+  height: 75px;
+  width: 100%;
+  background-color: rgba(128, 128,128, 1);
+  border-bottom: 5px solid rgba(240, 240, 0, 0.9);
+  z-index : 90;
+}
+
+#ar_url a{
+	display: block;
+	text-align: center;
+  	line-height: 75px;
+  	font-size: 20px;
+  	font-family : serif;
+  	cursor : pointer;
+}
+
