@@ -4,6 +4,7 @@
 
 #movie {
   height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .movie-wrapper {
   position: relative;

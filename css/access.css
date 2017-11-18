@@ -3,8 +3,9 @@
  ******************************************************************/
 
 #access {
-  color: #ffffff;
+  /*color: #ffffff;*/
   height: 750px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #access .container img {
