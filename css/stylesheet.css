@@ -4,14 +4,13 @@
 
 body {
 	color: #ffffff;
-  background-image: url("../images/bg_img2.jpg");
-  background-position-x: 50%;
-  background-position-y: 10%;
-  background-size: 100vw;
+  background-image: url("../images/background.png");
+  /*background-position-x: 50%;
+  background-position-y: 10%;*/
+  background-size: 100% auto;
   background-attachment: fixed;
-  /*background-repeat: no-repeat;*/
-  width: 100vw;
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+  /*width: 100vw;*/
 }
 
 /******************************************************************
