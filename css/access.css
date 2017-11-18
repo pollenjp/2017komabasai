@@ -5,11 +5,13 @@
 #access {
   color: #ffffff;
   height: 750px;
+  font-size:20px;
 }
 
 #access .container img {
   width: 50%;
   margin: 0 auto;
+  float: left
 }
 
 /******************************************************************
