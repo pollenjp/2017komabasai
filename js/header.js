@@ -35,7 +35,8 @@ $(function() {
   $('header a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).get(0).offsetTop;
-    $('html, body').animate({'scrollTop': position - header_height - ar_url_height}, 500);
+    var pos = position - header_height;
+    $('html, body').animate({'scrollTop': pos}, 500);
   });
 
   //背景の視差効果
