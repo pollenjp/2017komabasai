@@ -6,11 +6,13 @@
   /*color: #ffffff;*/
   height: 750px;
   background-color: rgba(255, 255, 255, 0.5);
+  font-size:30px;
 }
 
 #access .container img {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
+  float: left
 }
 
 /******************************************************************

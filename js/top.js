@@ -1,7 +1,7 @@
 $(function(){
 	var slide = "#slide-wrap";
 	var i = 0;
-	var pics = 2; //写真の枚数（0から数える）
+	var pics = 1; //写真の枚数（0から数える）
 	$(slide).find("li").eq(0).show();
 	setInterval(function(){
 		if(i < pics){
