@@ -35,7 +35,7 @@ $(function() {
   $('header a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).get(0).offsetTop;
-    var pos = position - header_height - ar_url_height;
+    var pos = position - header_height;
     $('html, body').animate({'scrollTop': pos}, 500);
   });
 
