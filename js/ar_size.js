@@ -41,7 +41,7 @@ function dynamicResize(){
     //    box-sizing: border-box;
     //}
     var containerClass = arId.getElementsByClassName("container");     //container: length 1
-    styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
+    //styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
     stylePadding(containerClass[0], "20px", "20px", "20px", "20px");
     containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
     containerClass[0].style.textAlign="center";
