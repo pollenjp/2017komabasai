@@ -6,6 +6,9 @@
   height: auto;
   background-color: rgba(255, 255, 255, 0.7);
 }
+.movie-text h2{
+  display:none;
+}
 .movie-wrapper {
   position: relative;
   width: 80vw;
@@ -22,6 +25,25 @@
   border-radius: 7px;
 }
 
+  @media(min-width:1000px){/*ここからレスポンシブデザイン*/
+    .movie-text{
+      box-sizing: border-box;
+      width:50%;
+      float:left;
+    }
+    .movie-text h2 {/*高さiframeに合わせ中央に寄せたほうがきれい*/
+      display:block;
+      padding-top: 100px;
+      margin: 10px;
+      background-color: #888;/*色変えたほうがいいかも*/
+    }
+    .movie-wrapper iframe{
+      max-height:300px;
+    }
+    .movie-clear{
+      clear:left;/*Progateのclear技*/
+    }
+  }
 
 
 
