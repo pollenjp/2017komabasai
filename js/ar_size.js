@@ -41,12 +41,17 @@ function dynamicResize(){
     //    box-sizing: border-box;
     //}
     var containerClass = arId.getElementsByClassName("container");     //container: length 1
-    //styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
     stylePadding(containerClass[0], "20px", "20px", "20px", "20px");
     containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
     containerClass[0].style.textAlign="center";
     pw = Number( getComputedStyle( document.body ).width.split("p")[0] );
-    cmr = 20;                                                       // Current MarginRight
+    if( window.matchMedia('(max-width:450px)').matches ){
+        styleMargin(containerClass[0], "0px", "0px", "0px", "0px");
+        cmr = 0;                                                       // Current MarginRight
+    } else {
+        styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
+        cmr = 20;                                                       // Current MarginRight
+    }
     cw = (pw -2*cmr).toString() + "px";                             // Current Width
     styleWidth(containerClass[0], cw);                          //arId.style.width = "100%";
     //#ar .container
