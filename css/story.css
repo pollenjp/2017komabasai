@@ -4,10 +4,11 @@
 #story {
     height: 750px;
   	background-image: url("../images/Story-img.png");
-	background-size: cover;
+	  background-size: 80vw;
     background-repeat: no-repeat;
     background-position-x: 50%;
     z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 

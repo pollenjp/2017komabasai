@@ -8,6 +8,7 @@
         <script src = "./js/jquery-3.2.1.js" type = "text/javascript"></script>
         <script src = "./js/noframework.waypoints.min.js" type = "text/javascript"></script>
         <script src = "./js/ScrollChange.js" type = "text/javascript"></script>
+		<script src = "./js/top.js"></script>
 
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
@@ -20,8 +21,9 @@
         <link rel="stylesheet" href="./css/special.css" type="text/css">
         <link rel="stylesheet" href="./css/vote.css" type="text/css">
         <link rel="stylesheet" href="./css/others.css" type="text/css">
+		    <link rel="stylesheet" href="./css/ar-url.css" type="text/css">
     </head>
-    <body>
+    <body style="margin:0">
         <header>
               <!--
                   ==========================================================
@@ -72,22 +74,28 @@
               -->
           </div>
         </header>
-        <div id = "top" class = "tag1 active-func">
+
+		  <div id="ar_url">
+			       <a href="#ar">ARマーカーはこちらから</a>
+		  </div>
+
+      <div id = "top" class = "tag1 active-func">
             <!--
                 ==========================================================
                 START top block
                 ==========================================================
             -->
-            <h1>Top</h1>
-			<ul class="slides">
-				<li class="slide activeSlide"><img src="images/thumbnail_vr_game.jpg"></li>
-				<li class="slide"><img src="images/pose_necchuu_computer_man.png"></li>
-				<li class="slide"><img src="images/computer_side_man.png"></li>
-			</ul>
-			<div class="index-btn-wrapper">
+			<div id="slide-wrap">
+				<ul>
+					<li class="slide"><img src="images/top_1.png"></li>
+					<li class="slide"><img src="images/researcher.png"></li>
+					<li class="slide"><img src="images/computer_side_man.png"></li>
+				</ul>
+			<!--<div class="index-btn-wrapper">
 				<div class="index-btn">1</div>
 				<div class="index-btn">2</div>
 				<div class="index-btn">3</div>
+			</div>-->
 			</div>
 		</div>
             <!--
@@ -95,7 +103,7 @@
                 END top block
                 ==========================================================
             -->
-        
+
         <div id = "story" class = "tag2 active-func">
             <!--
                 ==========================================================
@@ -103,7 +111,7 @@
                 ==========================================================
             -->
             <h1>Story</h1>
-			<p>想像次第でさまざまに変容する夢のボール、WonderSphereをめぐったアクションゲーム！<p>
+			<p>想像次第でさまざまに変容する夢のボール、WonderSphereをめぐったアクションゲーム！</p>
             <!--
                 ==========================================================
                 END story block
@@ -117,7 +125,10 @@
                 ==========================================================
             -->
             <h1>Movie</h1>
-            <iframe width = "300" height = "200" src = "https://www.youtube.com/embed/vEg8CRxvXug" frameborder = "0" gesture = "media"allowfullscreen></iframe>
+			<div class="movie-wrapper">
+				<iframe width = "800" height = "450" src = "https://www.youtube.com/embed/vEg8CRxvXug" frameborder = "0" gesture = "media"allowfullscreen></iframe>
+			</div>
+
             <!--
                 ==========================================================
                 END movie block
@@ -135,15 +146,20 @@
                 <div class="block0 blue">
                     <!-- <img src="./pic_ar/utvirtual_logo.jpeg"> -->
                     <div class="block1">
-                        <img id="arMarker1" class="marker-img" alt="marker" width="300" height="300" src="./pic_ar/utvirtual_logo_marker.png">
+                        <a href="https://pollenjp.github.io/utvirtual_3d_logo/" target="_blank">
+                            <img id="arMarker1" class="marker-img" alt="marker" width="300" height="300" src="./images/pic_ar/utv_egg_hibi_AR-01_blackframe.png">
+                        </a>
                     </div>
                     <div class="block1">
-                        <p class="head">
-                        AR！スマホで体験！
+                        <p class="head" style="font-size:large; font-weight:bold;">
+                        マーカーをクリック！<br>
+                        AR！スマホで体験！<br>
+                        （当日立て看板用）
                         </p>
                         <br>
                         <p class="body">
-                        　今年の駒場祭ではーーにあるUT-virtualの看板にカメラをかざすと3Dのオブジェクトが浮かび上がる！...
+                        　今年の駒場祭では
+                        <span style="font-weight:bold;">？？？</span>にあるUT-virtualの看板にカメラをかざすと3Dオブジェクトが浮かび上がる！
                         </p>
                     </div>
                 </div>
@@ -151,15 +167,17 @@
                 <div class="block0 green">
                     <div class="block1">
                         <p class="head">
-                        AR！スマホで体験！
+                        マーカーをクリック！<br>
+                        AR！スマホで体験！<br>
+                        （？？？用）
                         </p>
                         <br>
                         <p class="body">
-                        　今年の駒場祭ではーーにあるUT-virtualの看板にカメラをかざすと3Dのオブジェクトが浮かび上がる！...
+                        ？？？
                         </p>
                     </div>
                     <div class="block1">
-                        <img id="arMarker2" class="marker-img" alt="marker" width="250" height="250" src="./pic_ar/utvirtual_logo_marker.png">
+                        <img id="arMarker2" class="marker-img" alt="marker" width="250" height="250" src="./images/pic_ar/utvirtual_logo_marker.png">
                     </div>
                     <div class="clear1 left"></div>
                 </div>
@@ -187,9 +205,11 @@
                     <li>料金：500円/人</li>
                     <li>予約：不要</li>
                     <li>場所：東京大学駒場キャンパス1号館112教室</li>
-                    <img src = "./images/komaba_map.png" alt = "キャンパスマップ">
+                    <img src = "./images/map.svg" alt = "キャンパスマップ">
+                    <img src="./images/112_color.png" alt = "一号館マップ">
+                    <img src="./images/introduction.png" alt = "企画紹介">
                 </ul>
-            </div>
+                          </div>
             <!--
                 ==========================================================
                 END access block
@@ -262,6 +282,5 @@
         -->
 
         <script src = "./js/header.js"></script>
-		<script src = "./js/top.js"></script>
     </body>
 </html>

@@ -2,7 +2,8 @@
  *********************    top  start    ***************************
  ******************************************************************/
 #top {
-  height: 750px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /*
 #top h1 {
@@ -12,30 +13,59 @@
   padding: 60px 0;
 }*/
 
-.slides {
-  width: 80%;
-  margin: auto;
-  padding: 0;
-}
+@media only screen and (max-width: 1000px) {
+	#slide-wrap {
+	  text-align: center;
+	  width: 100vw;
+	  margin: auto;
+	  padding: 0;
+	}
 
-.slide {
-  width: calc((100% - 10px )/2);
-  margin: auto;
-  display: none;
-}
+	#slide-wrap ul{
+	  width: 100%;
+	  padding: 0;
+	}
 
-.activeSlide {
-  display: block;
-}
+	.slide {
+	  width: 100%;
+	  text-align: center;
+	  display: none;
+	  list-style: none;
+	}
 
-.slide img {
-  width: 100%;
-  margin: auto;
-  height: auto;
-  border-radius: 5px;
+	.slide img {
+	  width: 100%;
+	  text-align: center;
+	  overflow: hidden;
+	}
 }
+@media only screen and (min-width: 1000px) {
+	#slide-wrap {
+	  height: 80vh;
+	  text-align: center;
+	  margin: auto;
+	  padding: 0;
+	}
 
-.index-btn-wrapper {
+	#slide-wrap ul{
+	  height: 100%;
+	  padding: 0;
+	}
+
+	.slide {
+	  height: 100%;
+	  text-align: center;
+	  display: none;
+	  list-style: none;
+	}
+
+	.slide img {
+	  height: 100%;
+	  text-align: center;
+	  overflow: hidden;
+	}
+}
+/*.index-btn-wrapper {
   text-align: center;
   font-size: 16px;
   margin-top: 20px;
@@ -54,7 +84,9 @@
 .index-btn:hover {
   color: #fff;
   background-color: #5cabd0;
-}
+}*/
+
+
 /******************************************************************
  *********************    top  end    *****************************
  ******************************************************************/
