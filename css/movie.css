@@ -25,7 +25,7 @@
   border-radius: 7px;
 }
 
-  @media(min-width:1000px){/*ここからレスポンシブデザイン*/
+  @media(min-width:800px){/*ここからレスポンシブデザイン*/
     .movie-text{
       box-sizing: border-box;
       width:50%;
@@ -33,12 +33,14 @@
     }
     .movie-text h2 {/*高さiframeに合わせ中央に寄せたほうがきれい*/
       display:block;
-      padding-top: 100px;
+      padding-top: 50px;
+      padding-bottom:50px;
       margin: 10px;
       background-color: #888;/*色変えたほうがいいかも*/
+      text-align: center;
     }
     .movie-wrapper iframe{
-      max-height:300px;
+      max-height:50%;
     }
     .movie-clear{
       clear:left;/*Progateのclear技*/
