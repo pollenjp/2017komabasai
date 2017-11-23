@@ -5,24 +5,27 @@
 #special {
   cursor: default;
   height: 750px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 213, 236, 0.7);
 }
+
 
 
 #special .sp_link {
   display: block;
+  /*margin-left: 10px;*/
   /*overflow: hidden;*/
+}
+
+#special .sp_res {
+  display: block;
+  float: left;
+  width: 50%;
 }
 
 #special .sp_img_link {
   border: 1px solid #CCC;
   border-radius: 100%;
   opacity: 0.85;
-  /*
-  position: relative;
-  left: 100px;
-  top: 100px;
-  */
   height: 30vh;
   overflow: hidden;
   background-color: #fff;

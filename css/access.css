@@ -4,15 +4,17 @@
 
 #access {
   /*color: #ffffff;*/
-  height: 1000px;
+  height: 1500px;
   background-color: rgba(255, 255, 255, 0.5);
   font-size:30px;
 }
 
-#access .container img {
+
+
+#access img {
   width: 40%;
   margin: 0 auto;
-  float: left
+  float: left;
 }
 
 /******************************************************************

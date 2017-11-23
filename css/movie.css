@@ -4,19 +4,20 @@
 
 #movie {
   height: auto;
+  /*
   background-color: rgba(255, 255, 255, 0.7);
+  */
+  padding: 40px 0px;
 }
-.movie-text h2{
-  display:none;
-}
-.movie-wrapper {
+
+#movie .movie-wrapper {
   position: relative;
   width: 80vw;
   margin: auto;
   padding-top: 56.25%;
   overflow: hidden;
 }
-.movie-wrapper iframe {
+#movie .movie-wrapper iframe {
   position: absolute;
   top: 0;
   right: 0;
@@ -25,25 +26,25 @@
   border-radius: 7px;
 }
 
-  @media(min-width:800px){/*‚±‚±‚©‚çƒŒƒXƒ|ƒ“ƒVƒuƒfƒUƒCƒ“*/
+  @media(min-width:800px){/*ã“ã“ã‹ã‚‰ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ–ãƒ‡ã‚¶ã‚¤ãƒ³*/
     .movie-text{
       box-sizing: border-box;
       width:50%;
       float:left;
     }
-    .movie-text h2 {/*‚‚³iframe‚É‡‚í‚¹’†‰›‚ÉŠñ‚¹‚½‚Ù‚¤‚ª‚«‚ê‚¢*/
+    .movie-text h2 {/*é«˜ã•iframeã«åˆã‚ã›ä¸­å¤®ã«å¯„ã›ãŸã»ã†ãŒãã‚Œã„*/
       display:block;
       padding-top: 50px;
       padding-bottom:50px;
       margin: 10px;
-      background-color: #888;/*F•Ï‚¦‚½‚Ù‚¤‚ª‚¢‚¢‚©‚à*/
+      background-color: #888;/*è‰²å¤‰ãˆãŸã»ã†ãŒã„ã„ã‹ã‚‚*/
       text-align: center;
     }
     .movie-wrapper iframe{
       max-height:50%;
     }
     .movie-clear{
-      clear:left;/*Progate‚Ìclear‹Z*/
+      clear:left;/*Progateã®clearæŠ€*/
     }
   }
 

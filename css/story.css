@@ -3,12 +3,30 @@
  ******************************************************************/
 #story {
     height: 750px;
-  	background-image: url("../images/Story-img.png");
+  	/*background-image: url("../images/Story-img.png");*/
 	  background-size: 80vw;
     background-repeat: no-repeat;
     background-position-x: 50%;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+#story h2 span{
+  color: rgba(72, 209, 204, 1.0);
+}
+
+#story .story_text {
+  display: block;
+  margin: auto;
+  width: 80vw;
+  background-color: rgba(30, 144, 255, 0.5);
+  border-radius: 30px;
+  padding: 10px 10px;
+}
+
+#story .story_text center{
+  margin-top: 5px;
+  font-family: Hiragino Kaku Gothic Std;
 }
 
 

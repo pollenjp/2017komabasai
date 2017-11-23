@@ -8,10 +8,6 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-#vote p {
-  font-size: 20px; 
-}
-
 #vote .qr_code {
   margin-left: 20px;
   background-color: #ffffff;
