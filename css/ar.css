@@ -10,6 +10,11 @@
     */
 }
 
+#ar h1 {
+  font-family: cursive;
+  font-size: 54px;
+}
+
 /***********ここ以下(AR)はJavaScript上でも実装している(削除可能）*******/
 /*  #ar .container  /*  */
 /*  {  /*  */

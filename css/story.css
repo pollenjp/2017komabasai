@@ -12,7 +12,7 @@
 }
 
 #story h1 {
-  font-family: fantasy;
+  font-family: cursive;
   font-size: 54px;
 }
 
@@ -21,7 +21,12 @@
 }
 
 #story .story_text {
-
+  display: block;
+  margin: auto;
+  width: 80vw;
+  background-color: rgba(30, 144, 255, 0.5);
+  border-radius: 30px;
+  padding: 10px 10px;
 }
 
 #story .story_text center{
