@@ -35,6 +35,7 @@ window.onresize = dynamicResize;
 function dynamicResize(){
     console.log("call function dynamicResize");
     var arId = document.getElementById("ar");
+    arId.style.backgroundColor="rgba(255, 255, 255, 0.7)";
     //arId.style.boxSizing = "border-box";
     //#ar *
     //{
@@ -43,7 +44,7 @@ function dynamicResize(){
     var containerClass = arId.getElementsByClassName("container");     //container: length 1
     stylePadding(containerClass[0], "20px", "20px", "20px", "20px");
     //containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
-    containerClass[0].style.backgroundColor="rgba(255, 255, 255, 0.7)";
+    //containerClass[0].style.backgroundColor="rgba(255, 255, 255, 0.7)";
     containerClass[0].style.textAlign="center";
     pw = Number( getComputedStyle( document.body ).width.split("p")[0] );
     if( window.matchMedia('(max-width:450px)').matches ){
