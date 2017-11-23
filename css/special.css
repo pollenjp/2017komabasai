@@ -11,7 +11,14 @@
 
 #special .sp_link {
   display: block;
+  margin: auto;
   /*overflow: hidden;*/
+}
+
+#special .sp_res {
+  display: block;
+  float: left;
+  width: 50%;
 }
 
 #special .sp_img_link {
