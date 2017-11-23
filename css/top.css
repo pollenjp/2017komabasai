@@ -6,10 +6,16 @@
   height: auto;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 #top .top_text center {
   font-size: 60px;
   font-family: HiraMinProN-W6;
 }
+
+#top h2 span{
+  color: rgba(72, 209, 204, 1.0);
+}
+
 /*
 #top h1 {
   text-align: center;
