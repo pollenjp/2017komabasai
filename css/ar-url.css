@@ -5,6 +5,7 @@
   background-color: rgba(255, 0, 0, 0.5);
   /*border-bottom: 5px solid rgba(240, 240, 0, 0.9);*/
   z-index : 90;
+  cursor : pointer;
 }
 
 #ar_url a{

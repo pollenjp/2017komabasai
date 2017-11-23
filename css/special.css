@@ -11,7 +11,7 @@
 
 #special .sp_link {
   display: block;
-  margin: auto;
+  /*margin-left: 10px;*/
   /*overflow: hidden;*/
 }
 
