@@ -11,8 +11,22 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-#story .story_text p{
-  left: 50%;
+#story h1 {
+  font-family: fantasy;
+  font-size: 54px;
+}
+
+#story h2 span{
+  color: rgba(72, 209, 204, 1.0);
+}
+
+#story .story_text {
+
+}
+
+#story .story_text center{
+  margin-top: 5px;
+  font-family: Hiragino Kaku Gothic Std;
 }
 
 

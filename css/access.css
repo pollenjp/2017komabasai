@@ -9,10 +9,15 @@
   font-size:30px;
 }
 
-#access .container img {
+#access h1 {
+  font-family: fantasy;
+  font-size: 48px;
+}
+
+#access img {
   width: 40%;
   margin: 0 auto;
-  float: left
+  float: left;
 }
 
 /******************************************************************
