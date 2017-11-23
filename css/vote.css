@@ -8,11 +8,19 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-
-
 #vote .qr_code {
+  margin-left: 20px;
   background-color: #ffffff;
   width: 135px;
+}
+
+@media(max-width: 450px){
+  #vote .qr_message {
+    text-align: center;
+  }
+  #vote .qr_code {
+    margin: 0 auto;
+  }
 }
 
 /******************************************************************

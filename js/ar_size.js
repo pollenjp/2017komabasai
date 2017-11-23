@@ -41,12 +41,18 @@ function dynamicResize(){
     //    box-sizing: border-box;
     //}
     var containerClass = arId.getElementsByClassName("container");     //container: length 1
-    styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
     stylePadding(containerClass[0], "20px", "20px", "20px", "20px");
-    containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
+    //containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
+    containerClass[0].style.backgroundColor="rgba(255, 255, 255, 0.7)";
     containerClass[0].style.textAlign="center";
     pw = Number( getComputedStyle( document.body ).width.split("p")[0] );
-    cmr = 20;                                                       // Current MarginRight
+    if( window.matchMedia('(max-width:450px)').matches ){
+        styleMargin(containerClass[0], "0px", "0px", "0px", "0px");
+        cmr = 0;                                                       // Current MarginRight
+    } else {
+        styleMargin(containerClass[0], "20px", "20px", "20px", "20px");
+        cmr = 20;                                                       // Current MarginRight
+    }
     cw = (pw -2*cmr).toString() + "px";                             // Current Width
     styleWidth(containerClass[0], cw);                          //arId.style.width = "100%";
     //#ar .container
@@ -139,13 +145,16 @@ function dynamicResize(){
     //}
     var block0BlueClass = arId.getElementsByClassName("block0 blue");
     block0BlueClass[0].style.backgroundColor = "rgba(174, 232, 246, 0.6)";
+    //block0BlueClass[0].style.backgroundColor = "rgba(255, 255, 255, 0.7)";
     ///* #ar .container .block0.blue */
     //#ar .block0.blue
     //{
     //    background-color: rgba(174, 232, 246, 0.6);
     //}
     var block0GreenClass = arId.getElementsByClassName("block0 green");
-    block0GreenClass[0].style.backgroundColor = "rgba(0, 255, 0, 0.6)";
+    //block0GreenClass[0].style.backgroundColor = "rgba(0, 255, 0, 0.6)";
+    block0GreenClass[0].style.backgroundColor = "rgba(174, 232, 246, 0.6)";
+    //block0GreenClass[0].style.backgroundColor = "rgba(255, 255, 255, 0.7)";
     ///* #ar .container .block0.green */
     //#ar .block0.green
     //{
