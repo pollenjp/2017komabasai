@@ -4,7 +4,7 @@
 
 #special {
   cursor: default;
-  height: 1500px;
+  height: 1800px;
   background-color: rgba(255, 213, 236, 0.5);
 }
 
@@ -63,22 +63,38 @@
 
 #special .circles {
   padding: 10px 0px;
-  margin-top: 300px;
   width: 100%;
   background: #F00;
 }
 
 #special .circles .circle {
+
   float: left;
-  width: 50%;
+  width: 25%;
 }
 
-@@media only screen and (max-width: 1000px) {
+#special .circles .circle p {
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.sp_clear {
+  clear: left;
+}
+
+@@media (max-width: 1000px) {
+
   #special .sp_res {
-    display: block;
-    float: none;
     width: 100%;
   }
+
+  #special .circles .circle {
+    width: 50%;
+  }
+
+  .sp_clear {
+    clear: left;
+  }
+
 }
 /******************************************************************
  *********************    special  end    *************************
