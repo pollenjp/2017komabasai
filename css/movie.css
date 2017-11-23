@@ -4,13 +4,13 @@
 
 #movie {
   height: auto;
+  /*
   background-color: rgba(255, 255, 255, 0.7);
+  */
+  padding: 40px 0px;
 }
 
-#movie h1 {
-  font-family: cursive;
-  font-size: 54px;
-}
+
 
 #movie .movie-wrapper {
   position: relative;
