@@ -4,7 +4,7 @@
 
 #vote {
   cursor: default;
-  height: 750px;
+  /*height: 750px;*/
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -12,6 +12,10 @@
   margin-left: 20px;
   background-color: #ffffff;
   width: 135px;
+}
+
+#vote .container {
+  font-family: Hiragino Kaku Gothic Std;
 }
 
 @media(max-width: 450px){
