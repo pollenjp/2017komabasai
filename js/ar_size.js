@@ -226,6 +226,21 @@ function dynamicResize(){
         markerImgClass[i].style.float="left";
         styleMargin(markerImgClass[i], "5px", "5px", "5px", "5px");
     }
+    /*****************************************************************
+     *************** #ar .container .block0 .block1  iframe-video **********
+     *****************************************************************/
+    var iframeVideoClass = arId.getElementsByClassName("iframe-video");
+    ps = getComputedStyle( block1Class[0] );
+    pw = Number(ps.width.split("p")[0]);                // String --> remove "px" --> Number
+    ppr = Number(ps.paddingRight.split("p")[0]);
+    cmr = 5;
+    cw = (pw -2*cmr).toString() + "px";
+    for(var i=0; i<iframeVideoClass.length; i++){
+        styleWidth( iframeVideoClass[i], cw);
+        iframeVideoClass[i].style.height=cw*9/16;
+        iframeVideoClass[i].style.float="left";
+        styleMargin(iframeVideoClass[i], "5px", "5px", "5px", "5px");
+    }
     /****************************************************
      ****************** #ar .clear1.left ***************
      ***************************************************/
