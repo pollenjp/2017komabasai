@@ -2,7 +2,7 @@
  *********************    story  start    *************************
  ******************************************************************/
 #story {
-    height: 750px;
+    /*height: 750px;*/
   	/*background-image: url("../images/Story-img.png");*/
 	  background-size: 80vw;
     background-repeat: no-repeat;

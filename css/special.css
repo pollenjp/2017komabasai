@@ -3,8 +3,8 @@
  ******************************************************************/
 
 #special {
+  /*height: 1800px;*/
   cursor: default;
-  height: 1800px;
   background-color: rgba(255, 213, 236, 0.5);
 }
 
@@ -23,7 +23,7 @@
 }
 */
 #special .sp_text {
-  height: 30vh;
+
   font-size: 20px;
   font-family: Hiragino Kaku Gothic Std;
 }
@@ -67,13 +67,13 @@
   width: 100%;
   /*background: #F00;*/
 }
-
+/*
 #special .circles .circle {
 
   float: left;
   width: 25%;
 }
-
+*/
 #special .circles .circle p {
   font-family: Hiragino Kaku Gothic Std;
 }
