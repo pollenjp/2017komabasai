@@ -1,17 +1,25 @@
 #ar_url {
   margin-top: 80px;
-  height: 100px;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.5);
-  /*border-bottom: 5px solid rgba(240, 240, 0, 0.9);*/
+  background-color: rgba(255, 215, 0, 0.8);
+  color: rgba(0, 191, 255, 1.0);
+  border-bottom: 1px solid rgba(0, 220, 0, 0.9);
   z-index : 90;
+  cursor : pointer;
 }
 
-#ar_url a{
+#ar_url a {
+    color: rgba(0, 191, 255, 1.0);
 	  display: block;
 	  text-align: center;
   	line-height: 100px;
-  	font-size: 20px;
-  	font-family : serif;
+  	font-size: 30px;
+    font-weight: 700;
   	cursor : pointer;
+    text-decoration: none;
+}
+
+#ar_url a:hover {
+  transition: 0.3s;
+  font-size: 40px;
 }

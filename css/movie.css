@@ -4,16 +4,25 @@
 
 #movie {
   height: auto;
+  /*
   background-color: rgba(255, 255, 255, 0.7);
+  */
+  padding: 40px 0px;
 }
-.movie-wrapper {
+
+#movie .movie_text {
+  font-size: 30px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+#movie .movie-wrapper {
   position: relative;
-  width: 80vw;
+  width: 70vw;
   margin: auto;
   padding-top: 56.25%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
-.movie-wrapper iframe {
+#movie .movie-wrapper iframe {
   position: absolute;
   top: 0;
   right: 0;
@@ -22,6 +31,27 @@
   border-radius: 7px;
 }
 
+  @media(min-width:800px){/*ここからレスポンシブデザイン*/
+    .movie-text{
+      box-sizing: border-box;
+      width:50%;
+      float:left;
+    }
+    .movie-text h2 {/*高さiframeに合わせ中央に寄せたほうがきれい*/
+      display:block;
+      padding-top: 50px;
+      padding-bottom:50px;
+      margin: 10px;
+      background-color: #888;/*色変えたほうがいいかも*/
+      text-align: center;
+    }
+    .movie-wrapper iframe{
+      max-height:50%;
+    }
+    .movie-clear{
+      clear:left;/*Progateのclear技*/
+    }
+  }
 
 
 

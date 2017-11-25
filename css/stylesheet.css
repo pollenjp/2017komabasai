@@ -9,8 +9,14 @@ body {
   background-position-y: 10%;*/
   background-size: 100% auto;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   /*width: 100vw;*/
+}
+
+h1 {
+	color: rgba(165, 42, 42, 1.0);
+  font-family: cursive;
+  font-size: 60px;
 }
 
 /******************************************************************

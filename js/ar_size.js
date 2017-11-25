@@ -35,6 +35,7 @@ window.onresize = dynamicResize;
 function dynamicResize(){
     console.log("call function dynamicResize");
     var arId = document.getElementById("ar");
+    arId.style.backgroundColor="rgba(255, 255, 255, 0.7)";
     //arId.style.boxSizing = "border-box";
     //#ar *
     //{
@@ -42,7 +43,8 @@ function dynamicResize(){
     //}
     var containerClass = arId.getElementsByClassName("container");     //container: length 1
     stylePadding(containerClass[0], "20px", "20px", "20px", "20px");
-    containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
+    //containerClass[0].style.backgroundColor="rgba(95, 168, 160, 0.5)";
+    //containerClass[0].style.backgroundColor="rgba(255, 255, 255, 0.7)";
     containerClass[0].style.textAlign="center";
     pw = Number( getComputedStyle( document.body ).width.split("p")[0] );
     if( window.matchMedia('(max-width:450px)').matches ){
@@ -144,13 +146,16 @@ function dynamicResize(){
     //}
     var block0BlueClass = arId.getElementsByClassName("block0 blue");
     block0BlueClass[0].style.backgroundColor = "rgba(174, 232, 246, 0.6)";
+    //block0BlueClass[0].style.backgroundColor = "rgba(255, 255, 255, 0.7)";
     ///* #ar .container .block0.blue */
     //#ar .block0.blue
     //{
     //    background-color: rgba(174, 232, 246, 0.6);
     //}
     var block0GreenClass = arId.getElementsByClassName("block0 green");
-    block0GreenClass[0].style.backgroundColor = "rgba(0, 255, 0, 0.6)";
+    //block0GreenClass[0].style.backgroundColor = "rgba(0, 255, 0, 0.6)";
+    block0GreenClass[0].style.backgroundColor = "rgba(174, 232, 246, 0.6)";
+    //block0GreenClass[0].style.backgroundColor = "rgba(255, 255, 255, 0.7)";
     ///* #ar .container .block0.green */
     //#ar .block0.green
     //{
