@@ -5,6 +5,12 @@
 #others {
   height: 750px;
   background-color: rgba(255, 255, 255, 0.7);
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+#others a {
+  text-decoration: none;
+  color: #3399FF;
 }
 
 /******************************************************************
