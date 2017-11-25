@@ -14,6 +14,10 @@
   width: 135px;
 }
 
+#vote .container {
+  font-family: Hiragino Kaku Gothic Std;
+}
+
 @media(max-width: 450px){
   #vote .qr_message {
     text-align: center;
